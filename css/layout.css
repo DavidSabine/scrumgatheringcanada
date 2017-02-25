@@ -2,6 +2,12 @@ html {
   height: 100%;
 }
 
+body {
+  position: relative;
+  padding-bottom: 4rem;
+  min-height: 100%;
+}
+
 header {
   border: solid 0 #ccc;
   border-bottom-width: 1px;
@@ -11,12 +17,7 @@ header {
 section {
   max-width: 650px;
   margin: 0 auto;
-}
-
-body {
-  position: relative;
-  padding-bottom: 4rem;
-  min-height: 100%;
+  padding: 1rem;
 }
 
 footer {
@@ -25,5 +26,6 @@ footer {
   bottom: 0;
   left: 0;
   background-color: #eee;
+  padding: 0 1rem;
   text-align: center;
 }
