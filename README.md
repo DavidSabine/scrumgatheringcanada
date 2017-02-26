@@ -1,4 +1,4 @@
-/# Scrum Gathering Canada
+# Scrum Gathering Canada
 
 A site created by David Sabine and maintained by Ontario Scrum Community.
 
