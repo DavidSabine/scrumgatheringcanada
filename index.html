@@ -1,37 +1,1227 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link href="//fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet" type="text/css">
 	<meta name="keywords" content="agile, scrum, toronto, canada, scrum gathering, scrum alliance, agile alliance, conference, certified scrum master, scrummaster, product owner, developer, software development, agile manifesto" />
 	<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<base target="_top" />
 	<link rel="author" href="//scrumgathering.ca" />
 	<link rel="help" href="//scrumgathering.ca" />
 	<link rel="icon" href="/favicon.ico" />
 	<link rel="search" href="//google.com/search?q=site:scrumgathering.ca" />
-	<link rel="stylesheet" type="text/css" media="all" href="css/normalize.css" />
-	<link rel="stylesheet" type="text/css" media="all" href="css/default.css" />
-	<link rel="stylesheet" type="text/css" title="Scrum Gathering®" media="all" href="css/layout.css" />
-	<link rel="stylesheet" type="text/css" title="Scrum Gathering®" media="all" href="css/typeface.css" />
+	<!-- <link rel="stylesheet" type="text/css" media="all" href="css/normalize.skip.css" /> -->
+	<!-- <link rel="stylesheet" type="text/css" media="all" href="css/default.skip.css" /> -->
+	<!-- <link rel="stylesheet" type="text/css" title="Scrum Gathering®" media="all" href="css/layout.css" /> -->
+	<link rel="stylesheet" type="text/css" title="Scrum Gathering®" media="all" href="css/typeface.skip.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/nivo-lightbox.css">
+    <link rel="stylesheet" href="css/nivo-lightbox-theme.css">
+    <link rel="stylesheet" href="css/jquery.countdown.css">
+    <link rel="stylesheet" href="css/main.css">
 	<title>Regional Scrum Gathering® Canada 2017</title>
 </head>
 <body>
-	<header style="text-align:center;">
-		<h1>Regional Scrum&nbsp;Gathering® Canada 2017</h1>
-	</header>
-	<section>
-		<article>
-			<ul style="font-size:150%;">
-				<li>September 21&nbsp;&amp;&nbsp;22, 2017</li>
-				<li>Toronto, Ontario</li>
-				<li><a href="get-notified.html" target="_blank">Get&nbsp;notified when registration&nbsp;opens</a></li>
-				<li><a href="theme-ideas.html" target="_blank">Help choose a theme</a></li>
-			</ul>
-		</article>
-	</section>
-	<footer>
-		<p>Event planning by Ontario&nbsp;Scrum&nbsp;Community<sup style="display:none;">™<sup></p>
-	</footer>
+
+<body data-spy="scroll">
+<div id="home"></div>
+<nav id="site-nav" class="navbar navbar-fixed-top navbar-custom">
+    <div class="container">
+        <div class="navbar-header">
+
+            <!-- logo -->
+            <div class="site-branding">
+                <a class="logo" href="index.html">
+                    <!-- logo image  -->
+                    <!-- <img src="//markup.themewagon.com/conference_pro/assets/images/logo.png" alt="Logo"> -->
+                    Regional Scrum&nbsp;Gathering<sup>®</sup> Canada&nbsp;2017
+                </a>
+            </div>
+
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-items"
+                    aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+        </div><!-- /.navbar-header -->
+
+        <div class="collapse navbar-collapse" id="navbar-items">
+            <ul class="nav navbar-nav navbar-right">
+
+                <!-- navigation menu -->
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about" class="hide">About</a></li>
+                <li><a href="#speakers" class="hide">Speakers</a></li>
+                <li><a href="#schedule" class="hide">Schedule</a></li>
+                <li><a href="#partner" class="hide">Partner</a></li>
+                <li><a href="#sponsorship" class="hide">Sponsorship</a></li>
+                <li><a href="#faq" class="hide">FAQ</a></li>
+                <li><a href="#photos" class="hide">Photos</a></li>
+
+            </ul>
+        </div>
+    </div><!-- /.container -->
+</nav>
+
+<header id="site-header" class="site-header valign-center">
+    <div class="intro">
+
+        <h2>21 September, 2017 / Toronto, Ontario</h2>
+
+        <h1>Regional Scrum&nbsp;Gathering<sup>®</sup> Canada&nbsp;2017</h1>
+
+        <p>First &amp; Canadian Scrum&nbsp;Gathering<sup>®</sup></p>
+
+        <a class="btn btn-white inpage hide" href="#speakers">View Speakers</a>
+
+    </div>
+</header>
+
+<div id="countdown" class="countdown">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2">
+                <h3 class="section-title">Event Start</h3>
+            </div>
+            <div class="col-md-10">
+                <div id="defaultCountdown"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="about" class="section about hide">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+
+                <h3 class="section-title">About Us</h3>
+
+                <p>You've inspired new consumer, racked up click-thru's, blown-up brand enes. We can't give you back the
+                    weekends you worked, or erase the pain ebeing forced to make the logo bigger. But if you submit your
+                    best work we ajusts might be able to give the chance to show you best digital marketing.</p>
+
+                <figure>
+                    <img alt="" class="img-responsive" src="//markup.themewagon.com/conference_pro/assets/images/about-us.jpg">
+                </figure>
+
+            </div><!-- /.col-sm-6 -->
+
+            <div class="col-sm-6">
+
+                <h3 class="section-title multiple-title">What is Our Goal?</h3>
+
+                <p>You've inspired new consumer, racked up click-thru's, blown-up brand enes. We can't give you back the
+                    weekends you worked, or erase the pain ebeing forced to make the logo bigger. But if you submit your
+                    best work we ajusts might be able to give the chance to show you best digital marketing.</p>
+
+                <ul class="list-arrow-right">
+
+                    <li>Learn from the best Asian Social Media Experts &amp; Case Studies</li>
+                    <li>Have dedicated 2-to-1 meetings with the experts</li>
+                    <li>Reach more consumers for less by learning new digital media skills</li>
+                    <li>Save money when spending in online advertising</li>
+
+                </ul>
+
+            </div><!-- /.col-sm-6 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section>
+
+<section id="facts" class="bg-image-1 facts text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <h3>2017<br>September</h3>
+            </div>
+            <div class="col-sm-3">
+                <h3>Toronto<br>Canada</h3>
+            </div>
+            <div class="col-sm-3">
+                <h3>350<br>Tickets</h3>
+            </div>
+            <div class="col-sm-3">
+                <h3>06<br>Speakers</h3>
+            </div>
+        </div><!-- row -->
+    </div><!-- container -->
+</section>
+
+<section id="speakers" class="section speakers hide">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+                <h3 class="section-title">Speakers</h3>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+                <div class="speaker">
+
+                    <figure>
+                        <img alt="" class="img-responsive center-block" src="//markup.themewagon.com/conference_pro/assets/images/speakers/speaker-1.jpg">
+                    </figure>
+
+                    <h4>Jhon Smith</h4>
+
+                    <p>CEO of Peren</p>
+
+                    <ul class="social-block">
+                        <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                        <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                        <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                        <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                    </ul>
+
+                </div><!-- /.speaker -->
+            </div><!-- /.col-md-4 -->
+
+            <div class="col-md-4 col-sm-4">
+                <div class="speaker">
+
+                    <figure>
+                        <img alt="" class="img-responsive center-block" src="//markup.themewagon.com/conference_pro/assets/images/speakers/speaker-2.jpg">
+                    </figure>
+
+                    <h4>Jhon Smith</h4>
+
+                    <p>CEO of Peren</p>
+
+                    <ul class="social-block">
+                        <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                        <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                        <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                        <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                    </ul>
+
+                </div><!-- /.speaker -->
+            </div><!-- /.col-md-4 -->
+
+            <div class="col-md-4 col-sm-4">
+                <div class="speaker">
+
+                    <figure>
+                        <img alt="" class="img-responsive center-block" src="//markup.themewagon.com/conference_pro/assets/images/speakers/speaker-3.jpg">
+                    </figure>
+
+                    <h4>Jhon Smith</h4>
+
+                    <p>CEO of Peren</p>
+
+                    <ul class="social-block">
+                        <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                        <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                        <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                        <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                    </ul>
+
+                </div><!-- /.speaker -->
+            </div><!-- /.col-md-4 -->
+        </div><!-- /.row -->
+
+        <div class="row">
+            <div class="col-md-4 col-sm-4">
+
+                <div class="speaker">
+
+                    <figure>
+                        <img alt="" class="img-responsive center-block" src="//markup.themewagon.com/conference_pro/assets/images/speakers/speaker-4.jpg">
+                    </figure>
+
+                    <h4>Jhon Smith</h4>
+
+                    <p>CEO of Peren</p>
+
+                    <ul class="social-block">
+                        <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                        <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                        <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                        <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+
+                <div class="speaker">
+
+                    <figure>
+                        <img alt="" class="img-responsive center-block" src="//markup.themewagon.com/conference_pro/assets/images/speakers/speaker-5.jpg">
+                    </figure>
+
+                    <h4>Jhon Smith</h4>
+
+                    <p>CEO of Peren</p>
+
+                    <ul class="social-block">
+                        <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                        <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                        <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                        <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4">
+                <div class="speaker">
+                    <figure>
+                        <img alt="" class="img-responsive center-block" src="//markup.themewagon.com/conference_pro/assets/images/speakers/speaker-6.jpg">
+                    </figure>
+                    <h4>Jhon Smith</h4>
+                    <p>CEO of Peren</p>
+                    <ul class="social-block">
+                        <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                        <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                        <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                        <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contribution" class="hide section bg-image-2 contribution">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-uppercase mt0 font-400">Submit Your Contribution Work</h3>
+
+                <p>You've inspired new consumer, racked up click-thru's, blown-up brand awareness. We can't give you
+                    back the weekends you worked, or erase the pain of being forced to make the logo bigger. But if you
+                    submit your best work.</p>
+
+                <a class="btn btn-white" data-toggle="modal" data-target="#submission">Submit</a>
+                <div id="submission" class="modal fade" tabindex="-1" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
+                                <h3 class="black">SUBMIT YOUR CONTRIBUTION WORK</h3>
+                            </div>
+                            <div class="modal-body">
+                                <section>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="row">
+                                                <div class="col-sm-12">
+                                                    <p class="pdf">
+                                                        Submitted papers will be reviewed by committee reviewers and be
+                                                        scheduled for either oral or poster presentation during the
+                                                        conferences if the topic is relevant and the quality of the data
+                                                        justifies scheduling. Irrelevant or poor-quality abstracts may
+                                                        be rejected. Reviewed and accepted papers will receive
+                                                        notification information via email on Notification day, and will
+                                                        be requested to register before the Registration Deadline.
+                                                    </p>
+                                                    <p class="pdf">
+                                                        <span class="ion-ios-paper"></span>
+                                                    </p>
+                                                    <p class="down">
+                                                        Download Our all Price and Submit Methods
+                                                    </p>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <h3 class="section-title">Submission Form</h3>
+                                                </div>
+                                            </div>
+
+                                            <form action="php/submission.php" id="submission_form" method="post">
+                                                <div class="row">
+                                                    <div class="col-md-12" id="registration-msg" style="display:none;">
+                                                        <div class="alert"></div>
+                                                    </div>
+                                                    <div class="col-md-10 col-md-offset-1">
+                                                        <div class="row">
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control"
+                                                                           placeholder="First Name"
+                                                                           name="fname" required>
+                                                                </div> <!-- /.form-group -->
+                                                            </div> <!-- /.col-sm-6 -->
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control"
+                                                                           placeholder="Last Name"
+                                                                           name="lname" required>
+                                                                </div> <!-- /.form-group -->
+                                                            </div> <!-- /.col-sm-6 -->
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <input type="email" class="form-control"
+                                                                           placeholder="Email" name="email"
+                                                                           required>
+                                                                </div> <!-- /.form-group -->
+                                                            </div> <!-- /.col-sm-6 -->
+                                                            <div class="col-sm-6">
+                                                                <div class="form-group">
+                                                                    <input type="text" class="form-control"
+                                                                           placeholder="Subject" id="subject"
+                                                                           name="subject" required>
+                                                                </div> <!-- /.form-group -->
+                                                            </div> <!-- /.col-sm-6 -->
+                                                            <div class="col-sm-12">
+                                                                <div class="form-group">
+                                                                    <textarea class="form-control" rows="6"
+                                                                              placeholder="Message"
+                                                                              name="message"></textarea>
+                                                                </div> <!-- /.form-group -->
+                                                            </div> <!-- /.col-sm-12 -->
+                                                            <div class="col-sm-6">
+
+                                                            </div>
+                                                            <div class="text-center col-sm-6">
+                                                                <button type="submit" class="btn btn-black"
+                                                                        id="sfsubmit">Submit
+                                                                </button>
+                                                            </div>
+                                                        </div> <!-- /.row -->
+                                                    </div> <!-- /.col-md-10.col-md-offset-1 -->
+                                                </div>
+                                            </form>
+
+                                            <div id="submissionFormResponse"></div>
+
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                            <!--  <div class="modal-footer">
+                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                 <button type="button" class="btn btn-primary">Save changes</button>
+                             </div> -->
+                        </div><!-- /.modal-content -->
+                    </div><!-- /.modal-dialog -->
+                </div><!-- /.modal -->
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="schedule" class="section schedule hide">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Events Schedule</h3>
+            </div>
+        </div>
+        <div class="outer-tabs">
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs schedule_tabs" role="tablist">
+                <li role="presentation">
+                    <a href="#day1" aria-controls="day1" role="tab" data-toggle="tab">
+                        Day 1<br><span>19 November 2016</span>
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#day2" aria-controls="day2" role="tab" data-toggle="tab">
+                        Day 2<br><span>20 November 2016</span>
+                    </a>
+                </li>
+                <li role="presentation">
+                    <a href="#day3" aria-controls="day3" role="tab" data-toggle="tab">
+                        Day 3<br><span>21 November 2016</span>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane in active" id="day1">
+                    <div class="schedule_item">
+                        <div class="panel-heading">
+                            <div class="speakers">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-1.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="JHON SMITH">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-2.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="ELIZABETH">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-3.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="EMMA">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-4.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="AMELIA">
+                            </div>
+                            <div class="time"><span class="ion-clock"></span> 01:00 pm</div>
+                            <h4 class="panel-title">
+                                <a class="schedule_expand collapsed" href="#">
+                                    <div class="full-width">
+                                        Our most popular service
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse in" role="tabpanel"
+                             aria-labelledby="heading-1">
+                            <div class="panel-body">
+                                Our most popular service is our Virtual Receptionist. We know that sometimes it’s
+                                difficult to get to the phone if you are in the middle of something and you don’t
+                                want to miss that important call that could be the start of an exciting new business
+                                opportunity, so let us answer it for you.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule_item">
+                        <div class="panel-heading">
+                            <div class="speakers">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-2.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="JHON SMITH">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-1.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="ELIZABETH">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-4.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="EMMA">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-3.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="AMELIA">
+                            </div>
+                            <div class="time"><span class="ion-clock"></span> 03:00 pm</div>
+                            <h4 class="panel-title">
+                                <a class="schedule_expand" href="#">
+                                    <div class="full-width">
+                                        Starting your own business
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="heading-1">
+                            <div class="panel-body">
+                                Our most popular service is our Virtual Receptionist. We know that sometimes it’s
+                                difficult to get to the phone if you are in the middle of something and you don’t
+                                want to miss that important call that could be the start of an exciting new business
+                                opportunity, so let us answer it for you.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule_item">
+                        <div class="panel-heading">
+                            <div class="speakers">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-1.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="JHON SMITH">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-4.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="ELIZABETH">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-3.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="EMMA">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-2.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="AMELIA">
+                            </div>
+                            <div class="time"><span class="ion-clock"></span> 05:00 pm</div>
+                            <h4 class="panel-title">
+                                <a class="schedule_expand" href="#">
+                                    <div class="full-width">
+                                        So let us answer it for you
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="heading-1">
+                            <div class="panel-body">
+                                Our most popular service is our Virtual Receptionist. We know that sometimes it’s
+                                difficult to get to the phone if you are in the middle of something and you don’t
+                                want to miss that important call that could be the start of an exciting new business
+                                opportunity, so let us answer it for you.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="day2">
+                    <div class="schedule_item">
+                        <div class="panel-heading">
+                            <div class="speakers">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-1.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="JHON SMITH">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-2.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="ELIZABETH">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-3.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="EMMA">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-4.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="AMELIA">
+                            </div>
+                            <div class="time"><span class="ion-clock"></span> 01:00 pm</div>
+                            <h4 class="panel-title">
+                                <a class="schedule_expand collapsed" href="#">
+                                    <div class="full-width">
+                                        We know that sometimes it’s difficult
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse in" role="tabpanel"
+                             aria-labelledby="heading-1">
+                            <div class="panel-body">
+                                Our most popular service is our Virtual Receptionist. We know that sometimes it’s
+                                difficult to get to the phone if you are in the middle of something and you don’t
+                                want to miss that important call that could be the start of an exciting new business
+                                opportunity, so let us answer it for you.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule_item">
+                        <div class="panel-heading">
+                            <div class="speakers">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-2.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="JHON SMITH">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-1.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="ELIZABETH">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-4.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="EMMA">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-3.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="AMELIA">
+                            </div>
+                            <div class="time"><span class="ion-clock"></span> 03:00 pm</div>
+                            <h4 class="panel-title">
+                                <a class="schedule_expand" href="#">
+                                    <div class="full-width">
+                                        Starting your own business
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="heading-1">
+                            <div class="panel-body">
+                                Our most popular service is our Virtual Receptionist. We know that sometimes it’s
+                                difficult to get to the phone if you are in the middle of something and you don’t
+                                want to miss that important call that could be the start of an exciting new business
+                                opportunity, so let us answer it for you.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule_item">
+                        <div class="panel-heading">
+                            <div class="speakers">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-1.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="JHON SMITH">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-4.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="ELIZABETH">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-3.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="EMMA">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-2.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="AMELIA">
+                            </div>
+                            <div class="time"><span class="ion-clock"></span> 05:00 pm</div>
+                            <h4 class="panel-title">
+                                <a class="schedule_expand" href="#">
+                                    <div class="full-width">
+                                        So let us answer it for you
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="heading-1">
+                            <div class="panel-body">
+                                Our most popular service is our Virtual Receptionist. We know that sometimes it’s
+                                difficult to get to the phone if you are in the middle of something and you don’t
+                                want to miss that important call that could be the start of an exciting new business
+                                opportunity, so let us answer it for you.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="day3">
+                    <div class="schedule_item">
+                        <div class="panel-heading">
+                            <div class="speakers">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-1.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="JHON SMITH">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-2.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="ELIZABETH">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-3.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="EMMA">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-4.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="AMELIA">
+                            </div>
+                            <div class="time"><span class="ion-clock"></span> 01:00 pm</div>
+                            <h4 class="panel-title">
+                                <a class="schedule_expand collapsed" href="#">
+                                    <div class="full-width">
+                                        Starting your own business Day 3
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse in" role="tabpanel"
+                             aria-labelledby="heading-1">
+                            <div class="panel-body">
+                                Our most popular service is our Virtual Receptionist. We know that sometimes it’s
+                                difficult to get to the phone if you are in the middle of something and you don’t
+                                want to miss that important call that could be the start of an exciting new business
+                                opportunity, so let us answer it for you.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule_item">
+                        <div class="panel-heading">
+                            <div class="speakers">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-1.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="JHON SMITH">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-2.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="ELIZABETH">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-3.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="EMMA">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-4.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="AMELIA">
+                            </div>
+                            <div class="time"><span class="ion-clock"></span> 01:00 pm</div>
+                            <h4 class="panel-title">
+                                <a class="schedule_expand" href="#">
+                                    <div class="full-width">
+                                        Starting your own business Day 3
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="heading-1">
+                            <div class="panel-body">
+                                Our most popular service is our Virtual Receptionist. We know that sometimes it’s
+                                difficult to get to the phone if you are in the middle of something and you don’t
+                                want to miss that important call that could be the start of an exciting new business
+                                opportunity, so let us answer it for you.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule_item">
+                        <div class="panel-heading">
+                            <div class="speakers">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-1.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="JHON SMITH">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-2.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="ELIZABETH">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-3.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="EMMA">
+                                <img src="//markup.themewagon.com/conference_pro/assets/images/thum_s/s-4.png" alt="speaker" class="thum-s"
+                                     data-toggle="tooltip" data-placement="top" title="AMELIA">
+                            </div>
+                            <div class="time"><span class="ion-clock"></span> 01:00 pm</div>
+                            <h4 class="panel-title">
+                                <a class="schedule_expand" href="#">
+                                    <div class="full-width">
+                                        Starting your own business Day 3
+                                    </div>
+                                </a>
+                            </h4>
+                        </div>
+                        <div class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="heading-1">
+                            <div class="panel-body">
+                                Our most popular service is our Virtual Receptionist. We know that sometimes it’s
+                                difficult to get to the phone if you are in the middle of something and you don’t
+                                want to miss that important call that could be the start of an exciting new business
+                                opportunity, so let us answer it for you.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="registration" class="section registration hide">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Conference Registration</h3>
+            </div>
+        </div>
+
+
+        <form action="php/registration.php" id="registration_form" method="post">
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="First Name" id="fname" name="fname"
+                                       required>
+                            </div> <!-- /.form-group -->
+                        </div> <!-- /.col-sm-6 -->
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Last Name" id="lname" name="lname"
+                                       required>
+                            </div> <!-- /.form-group -->
+                        </div> <!-- /.col-sm-6 -->
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email" name="email"
+                                       required>
+                            </div> <!-- /.form-group -->
+                        </div> <!-- /.col-sm-6 -->
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="number" class="form-control" placeholder="Age" name="age"
+                                       required>
+                            </div> <!-- /.form-group -->
+                        </div> <!-- /.col-sm-6 -->
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <textarea class="form-control" rows="6" placeholder="Message" name="message"></textarea>
+                            </div> <!-- /.form-group -->
+                        </div> <!-- /.col-sm-12 -->
+                        <div class="text-center mt20 col-sm-6 col-sm-offset-3">
+                            <button type="submit" class="btn btn-black" id="rfsubmit">Submit</button>
+                        </div>
+                    </div> <!-- /.row -->
+                </div> <!-- /.col-md-10.col-md-offset-1 -->
+            </div>
+        </form>
+        <div id="registration_formResponse"></div>
+    </div>
+</section>
+
+<section id="important-date" class="section important-date">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Important Dates</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <table style="width:100%">
+                    <tr>
+                        <th rowspan="2">Keynotes</th>
+                        <td>Submission Deadline</td>
+                        <td>Notification Date</td>
+                    </tr>
+                    <tr>
+                        <td>TBA</td>
+                        <td>TBA</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Presentations</th>
+                        <td>Submission Deadline</td>
+                        <td>Notification Date</td>
+                    </tr>
+                    <tr>
+                        <td>TBA</td>
+                        <td>TBA</td>
+                    </tr>
+                    <tr>
+                        <th>Registration</th>
+                        <td>Early Bird TBA</td>
+                        <td>$$ TBA</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="partner" class="section partner hide">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Event Partners</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-1"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-2"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-3"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-4"></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-5"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-6"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-7"></a>
+            </div>
+            <div class="col-sm-3">
+                <a class="partner-box partner-box-8"></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="sponsorship" class="section sponsorship hide">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Sponsorship</h3>
+            </div>
+        </div>
+        <div class="sponsors">
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="//markup.themewagon.com/conference_pro/assets/images/sponsor/s-1.png" alt="" class="img-responsive">
+                    <h5 class="sponsor-caption">Platinum Sponsorship</h5>
+                </div>
+                <div class="col-md-4">
+                    <img src="//markup.themewagon.com/conference_pro/assets/images/sponsor/s-2.png" alt="" class="img-responsive">
+                    <h5 class="sponsor-caption">Gold Sponsorship</h5>
+                </div>
+                <div class="col-md-4">
+                    <img src="//markup.themewagon.com/conference_pro/assets/images/sponsor/s-3.png" alt="" class="img-responsive">
+                    <h5 class="sponsor-caption">Silver Sponsorship</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="faq" class="section faq hide">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Event FAQ<span>s</span></h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse"
+                                   data-parent="#accordion" href="#collapseOne" aria-expanded="true"
+                                   aria-controls="collapseOne"> What is the price of the ticket ?</a>
+                            </h4>
+                        </div>
+
+                        <div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <h3>Hello</h3>
+                                <p>Lorem Ipsum</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingTwo">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse"
+                                   data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+                                   aria-controls="collapseTwo"> What is included in my ticket ?</a>
+                            </h4>
+                        </div>
+
+                        <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="headingTwo">
+                            <div class="panel-body">Hello</div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingThree">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse"
+                                   data-parent="#accordion" href="#collapseThree" aria-expanded="false"
+                                   aria-controls="collapseThree"> Office address ?</a>
+                            </h4>
+                        </div>
+
+                        <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="headingThree">
+                            <div class="panel-body">Hello</div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFour">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse"
+                                   data-parent="#accordion" href="#collapseFour" aria-expanded="false"
+                                   aria-controls="collapseFour"> How should I dress ?</a>
+                            </h4>
+                        </div>
+
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="headingFour">
+                            <div class="panel-body">Hello</div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingFive">
+                            <h4 class="panel-title">
+                                <a class="faq-toggle collapsed" role="button" data-toggle="collapse"
+                                   data-parent="#accordion" href="#collapseFive" aria-expanded="false"
+                                   aria-controls="collapseFive"> I have specific questions that are not addressed here.
+                                    Who can help me ?</a>
+                            </h4>
+                        </div>
+
+                        <div id="collapseFive" class="panel-collapse collapse" role="tabpanel"
+                             aria-labelledby="headingFive">
+                            <div class="panel-body">Hello</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="photos" class="section photos hide">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="section-title">Photos</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <ul class="grid">
+
+                    <li class="grid-item grid-item-sm-6">
+                        <div class="photo-overlay">
+                            <h2>
+                                Skilet Album Cover
+                            </h2>
+                            <p class="photo-catagory">
+                                Business / Fashion
+                            </p>
+                            <a class="gallery-item" href="//markup.themewagon.com/conference_pro/assets/images/photos/photos-1.jpg"
+                               data-lightbox-gallery="photos">
+                                <div class="btn btn-default classic-button">view</div>
+                            </a>
+                        </div>
+                        <img alt="" class="img-responsive center-block" src="//markup.themewagon.com/conference_pro/assets/images/photos/photos-1.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <div class="photo-overlay">
+                            <h2>
+                                Skilet Album Cover
+                            </h2>
+                            <p class="photo-catagory">
+                                Business / Fashion
+                            </p>
+                            <a class="gallery-item" href="//markup.themewagon.com/conference_pro/assets/images/photos/photos-2.jpg"
+                               data-lightbox-gallery="photos">
+                                <div class="btn btn-default classic-button">view</div>
+                            </a>
+                        </div>
+                        <img alt="" class="img-responsive center-block" src="//markup.themewagon.com/conference_pro/assets/images/photos/photos-2.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <div class="photo-overlay">
+                            <h2>
+                                Skilet Album Cover
+                            </h2>
+                            <p class="photo-catagory">
+                                Business / Fashion
+                            </p>
+                            <a class="gallery-item" href="//markup.themewagon.com/conference_pro/assets/images/photos/photos-3.jpg"
+                               data-lightbox-gallery="photos">
+                                <div class="btn btn-default classic-button">view</div>
+                            </a>
+                        </div>
+                        <img alt="" class="img-responsive center-block" src="//markup.themewagon.com/conference_pro/assets/images/photos/photos-3.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <div class="photo-overlay">
+                            <h2>
+                                Skilet Album Cover
+                            </h2>
+                            <p class="photo-catagory">
+                                Business / Fashion
+                            </p>
+                            <a class="gallery-item" href="//markup.themewagon.com/conference_pro/assets/images/photos/photos-5.jpg"
+                               data-lightbox-gallery="photos">
+                                <div class="btn btn-default classic-button">view</div>
+                            </a>
+                        </div>
+                        <img alt="" class="img-responsive center-block" src="//markup.themewagon.com/conference_pro/assets/images/photos/photos-5.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <div class="photo-overlay">
+                            <h2>
+                                Skilet Album Cover
+                            </h2>
+                            <p class="photo-catagory">
+                                Business / Fashion
+                            </p>
+                            <a class="gallery-item" href="//markup.themewagon.com/conference_pro/assets/images/photos/photos-6.jpg"
+                               data-lightbox-gallery="photos">
+                                <div class="btn btn-default classic-button">view</div>
+                            </a>
+                        </div>
+                        <img alt="" class="img-responsive center-block" src="//markup.themewagon.com/conference_pro/assets/images/photos/photos-6.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <div class="photo-overlay">
+                            <h2>
+                                Skilet Album Cover
+                            </h2>
+                            <p class="photo-catagory">
+                                Business / Fashion
+                            </p>
+                            <a class="gallery-item" href="//markup.themewagon.com/conference_pro/assets/images/photos/photos-7.jpg"
+                               data-lightbox-gallery="photos">
+                                <div class="btn btn-default classic-button">view</div>
+                            </a>
+                        </div>
+                        <img alt="" class="img-responsive center-block" src="//markup.themewagon.com/conference_pro/assets/images/photos/photos-7.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <div class="photo-overlay">
+                            <h2>
+                                Skilet Album Cover
+                            </h2>
+                            <p class="photo-catagory">
+                                Business / Fashion
+                            </p>
+                            <a class="gallery-item" href="//markup.themewagon.com/conference_pro/assets/images/photos/photos-8.jpg"
+                               data-lightbox-gallery="photos">
+                                <div class="btn btn-default classic-button">view</div>
+                            </a>
+                        </div>
+                        <img alt="" class="img-responsive center-block" src="//markup.themewagon.com/conference_pro/assets/images/photos/photos-8.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <div class="photo-overlay">
+                            <h2>
+                                Skilet Album Cover
+                            </h2>
+                            <p class="photo-catagory">
+                                Business / Fashion
+                            </p>
+                            <a class="gallery-item" href="//markup.themewagon.com/conference_pro/assets/images/photos/photos-9.jpg"
+                               data-lightbox-gallery="photos">
+                                <div class="btn btn-default classic-button">view</div>
+                            </a>
+                        </div>
+                        <img alt="" class="img-responsive center-block" src="//markup.themewagon.com/conference_pro/assets/images/photos/photos-2.jpg">
+                    </li>
+
+                    <li class="grid-item grid-item-sm-3">
+                        <div class="photo-overlay">
+                            <h2>
+                                Skilet Album Cover
+                            </h2>
+                            <p class="photo-catagory">
+                                Business / Fashion
+                            </p>
+                            <a class="gallery-item" href="//markup.themewagon.com/conference_pro/assets/images/photos/photos-3.jpg"
+                               data-lightbox-gallery="photos">
+                                <div class="btn btn-default classic-button">view</div>
+                            </a>
+                        </div>
+                        <img alt="" class="img-responsive center-block" src="//markup.themewagon.com/conference_pro/assets/images/photos/photos-3.jpg">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="location" class="section location">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <h3 class="section-title">Event Location</h3>
+                <address>
+                    <p><br>Toronto <br><br>Ontario <br><br> Email: info@scrumgathering.ca</p>
+                </address>
+            </div>
+            <div class="col-sm-9" id="map">
+                <iframe class="map_canvas"
+                    src="https://www.google.com/maps/embed/v1/view?zoom=10&amp;center=43.6532,-79.3832&amp;key=AIzaSyAN0om9mFmy1QN6Wf54tXAowK4eT0ZUPrU"
+                    width="100%" height="280" frameborder="0" style="border:0" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+
+        <div class="row mt60 hide">
+            <div class="col-md-12">
+                <h3 class="section-title ">Contact Us</h3>
+            </div>
+        </div>
+        <form action="php/contact.php" id="contactForm" method="post" class="hide">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Name" id="name" name="name"
+                                       required>
+                            </div> <!-- /.form-group -->
+                        </div> <!-- /.col-sm-6 -->
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email" id="email" name="email"
+                                       required>
+                            </div> <!-- /.form-group -->
+                        </div> <!-- /.col-sm-6 -->
+                        <div class="col-sm-12">
+                            <div class="form-group">
+                                <textarea class="form-control" rows="6" placeholder="Message" name="message"></textarea>
+                            </div> <!-- /.form-group -->
+                        </div> <!-- /.col-sm-12 -->
+                        <div class="text-center mt20 col-sm-6 col-sm-offset-3">
+                            <button type="submit" class="btn btn-black" id="cfsubmit">Submit</button>
+                        </div>
+                    </div> <!-- /.row -->
+                </div> <!-- /.col-md-10.col-md-offset-1 -->
+            </div>
+        </form>
+        <div id="contactFormResponse" class="hide"></div>
+    </div>
+</section>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <p class="site-info">Organised&nbsp;by Ontario&nbsp;Scrum&nbsp;Community<sup class="hide">®</sup>
+                </p>
+                <ul class="social-block">
+                    <li><a href=""><i class="ion-social-twitter"></i></a></li>
+                    <li><a href=""><i class="ion-social-facebook"></i></a></li>
+                    <li><a href=""><i class="ion-social-linkedin-outline"></i></a></li>
+                    <li><a href=""><i class="ion-social-googleplus"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- script -->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.plugin.min.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<script src="js/nivo-lightbox.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
