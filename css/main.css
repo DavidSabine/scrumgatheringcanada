@@ -237,7 +237,13 @@ ul li {
 }
 
 .bg-image-1 {
-    background: url(../images/Toronto_skyline_toronto_islands_b.jpg) no-repeat center center/cover;
+    /*background: url(../images/Toronto_skyline_toronto_islands_b.jpg) no-repeat center center/cover;*/
+    /*background: url("../images/Sunset_Toronto.jpg") no-repeat center center/cover;*/
+    /*background: url("../images/Toronto_skyline_(2012).jpg") no-repeat center center/cover;*/
+    /*background: url("../images/Toronto_Skyline_Through_Island.jpg") no-repeat center center/cover;*/
+    /*background: url("../images/Toronto_skyline_toronto_islands_b.jpg") no-repeat center center/cover;*/
+    /*background: url("../images/Toronto_skyline_tommythompsonpark_cropped.jpg") no-repeat center center/cover;*/
+    background: url("../images/canadian_landscape_3_by_karinbreem.jpg") no-repeat center center/cover;
 }
 .bg-image-1::before {
     background-color: rgba(0, 0, 0, 0.7);
@@ -335,7 +341,7 @@ ul li {
     min-height: 100vh;
     position: relative;
     text-align: center;
-    background: url(../images/Toronto_skyline_tommythompsonpark_cropped.jpg) no-repeat center center/cover;
+    background: url("../images/toronto-office.jpg") no-repeat center center/cover;
 }
 .site-header::before {
     content: "";
