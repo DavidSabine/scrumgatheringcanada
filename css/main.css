@@ -341,7 +341,7 @@ ul li {
     min-height: 100vh;
     position: relative;
     text-align: center;
-    background: url("../images/toronto-office.jpg") no-repeat center center/cover;
+    background: url("../images/toronto-office.jpg") no-repeat center left/cover;
 }
 .site-header::before {
     content: "";
