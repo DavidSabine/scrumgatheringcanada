@@ -1,5 +1,17 @@
+function SendLinkByMail(href) {
+    var subject= "I had an inquiry while visiting scrumgathering.ca";
+    var body = "Hello Scrum Gathering organizers,\r\n\r\n";
+    var uri = "mailto:1st@scrumgathering.ca?subject=";
+    uri += encodeURIComponent(subject);
+    uri += "&body=";
+    uri += encodeURIComponent(body);
+    window.open(uri);
+}
+
 $(document).ready(function () {
 
+
+    $('.emailaddress').text("1st@scrumgathering.ca");
 
     $('.schedule_expand').on('click', function(e){
         e.preventDefault();
@@ -175,11 +187,12 @@ $(document).ready(function () {
 // Countdown jquery
 
 $(function () {
-    var day = 21,
-        month = 09,
-        year = 2017;
+    var day = 18,
+        month = 03,
+        year = 2018;
     var austDay = new Date(year, month - 1, day);
-    $('#defaultCountdown').countdown({until: austDay});
+    // $('#defaultCountdown').countdown({until: austDay, format:'dHMS'});
+    $('#defaultCountdown').countdown({until: austDay, format:'O'});
     $('#year').text(austDay.getFullYear());
 });
 
