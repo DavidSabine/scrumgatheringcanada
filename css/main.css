@@ -248,7 +248,7 @@ ul li {
     background: url("../images/canadian_landscape_3_by_karinbreem.jpg") no-repeat center center/cover;
 }
 .bg-image-1::before {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 .bg-image-2 {
@@ -353,7 +353,7 @@ ul li {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
 }
 .site-header .intro {
     color: #fff;
