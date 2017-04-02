@@ -1,5 +1,5 @@
-function SendLinkByMail(href) {
-    var subject= "I had an inquiry while visiting scrumgathering.ca";
+function SendLinkByMail(subject) {
+    var subject= subject;
     var body = "Hello Scrum Gathering organizers,\r\n\r\n";
     var uri = "mailto:1st@scrumgathering.ca?subject=";
     uri += encodeURIComponent(subject);
@@ -12,7 +12,7 @@ $(document).ready(function () {
 
 
     $('.emailaddress').text("1st@scrumgathering.ca");
-
+    $('.emailaddress').text("1st@scrumgathering.ca");
     $('.schedule_expand').on('click', function(e){
         e.preventDefault();
         var targetContent = $(this).closest('.schedule_item').find('.panel-collapse');
@@ -187,12 +187,13 @@ $(document).ready(function () {
 // Countdown jquery
 
 $(function () {
-    var day = 18,
+    var day = 26,
         month = 03,
         year = 2018;
     var austDay = new Date(year, month - 1, day);
+    $('#defaultCountdown').countdown({until: austDay, format:'d'});
     // $('#defaultCountdown').countdown({until: austDay, format:'dHMS'});
-    $('#defaultCountdown').countdown({until: austDay, format:'O'});
+    // $('#defaultCountdown').countdown({until: austDay, format:'O'});
     $('#year').text(austDay.getFullYear());
 });
 

@@ -2,34 +2,34 @@
 http://type-scale.com/?size=48&scale=1.200&text=A Visual Type Scale&webfont=Open%2BSans%7CRoboto&font-family='Open%20Sans'&font-weight=400&font-family-headers=&font-weight-headers=inherit&background-color=white&font-color=%23333
 */
 
-html {line-height: 1.55}
+html {line-height: 1.6}
 
-body {
+/*body {
   background-color: white;
   font-family: 'Roboto';
   color: #333;
 }
+*/
+p {margin-bottom: 1.6em;}
 
-p {margin-bottom: 1.3em;}
-
-h1, h2, h3, h4 {
+/*h1, h2, h3, h4 {
   font-family: 'Open Sans';
   font-weight: inherit;
   color:#ff8000;
 }
-
-h1 {
+*/
+/*h1 {
   font-size: 2.074em;
 }
+*/
+/*h2 {font-size: 1.728em;}*/
 
-h2 {font-size: 1.728em;}
+/*h3 {font-size: 1.44em;}*/
 
-h3 {font-size: 1.44em;}
+/*h4 {font-size: 1.2em;}*/
 
-h4 {font-size: 1.2em;}
+/*small {font-size: 0.833em;}*/
 
-small {font-size: 0.833em;}
-
-a, a:visited, a:hover {
+/*a, a:visited, a:hover {
 	color:#118bd6;
-}
+}*/

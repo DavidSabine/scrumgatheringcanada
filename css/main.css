@@ -18,7 +18,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 300;
-    line-height: 1.6;
+    /*line-height: 1.6;*/
     position: relative;
     -webkit-font-smoothing: antialiased;
 }
@@ -44,10 +44,6 @@ h5,
 h6 {
     font-weight: 700;
     letter-spacing: 2.3px;
-}
-
-p {
-    margin: 0 0 30px;
 }
 
 ul li {
