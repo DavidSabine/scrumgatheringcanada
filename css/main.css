@@ -624,20 +624,26 @@ a:focus, a:hover{
 }
 .partner .partner-box {
     display: block;
-    opacity: 0.3;
-    height: 150px;
-    width: 150px;
+    /*opacity: 0.3;*/
+    filter: grayscale(1%); /* Current draft standard */
+    -webkit-filter: grayscale(1); /* New WebKit */
+    min-height: 150px;
+    min-width: 150px;
+    height:100%;
+    width:100%;
     margin: 25px auto;
     -webkit-transition: 0.5s all linear;
     transition: 0.5s all linear;
 }
 .partner .partner-box:hover {
-    opacity: 1;
+    /*opacity: 1;*/
+    filter: grayscale(0%); /* Current draft standard */
+    -webkit-filter: grayscale(0); /* New WebKit */
 }
 .partner .partner-box-1 {
-    background: url(//markup.themewagon.com/conference_pro/images/partner/partner-1.png) no-repeat center center/contain;
+    background: url(../images/scrumalliance-logo.svg) no-repeat center center/contain;
 }
-.partner .partner-box-2 {
+/*.partner .partner-box-2 {
     background: url(//markup.themewagon.com/conference_pro/images/partner/partner-2.png) no-repeat center center/contain;
 }
 .partner .partner-box-3 {
@@ -658,7 +664,7 @@ a:focus, a:hover{
 .partner .partner-box-8 {
     background: url(//markup.themewagon.com/conference_pro/images/partner/partner-8.png) no-repeat center center/contain;
 }
-
+*/
 /* 
  * 6.8 Section: FAQ
  */
