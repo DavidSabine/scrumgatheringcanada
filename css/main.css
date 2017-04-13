@@ -624,9 +624,8 @@ a:focus, a:hover{
 }
 .partner .partner-box {
     display: block;
-    /*opacity: 0.3;*/
-    filter: grayscale(1%); /* Current draft standard */
-    -webkit-filter: grayscale(1); /* New WebKit */
+    /*filter: grayscale(1%);  Current draft standard */
+    /*-webkit-filter: grayscale(1); /* New WebKit */
     min-height: 150px;
     min-width: 150px;
     height:100%;
@@ -635,12 +634,11 @@ a:focus, a:hover{
     -webkit-transition: 0.5s all linear;
     transition: 0.5s all linear;
 }
-.partner .partner-box:hover {
-    /*opacity: 1;*/
-    filter: grayscale(0%); /* Current draft standard */
-    -webkit-filter: grayscale(0); /* New WebKit */
+/*.partner .partner-box:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0);
 }
-.partner .partner-box-1 {
+*/.partner .partner-box-1 {
     background: url(../images/scrumalliance-logo.svg) no-repeat center center/contain;
 }
 /*.partner .partner-box-2 {
