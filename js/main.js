@@ -8,6 +8,11 @@ function SendLinkByMail(subject) {
     window.open(uri);
 }
 
+function writeRandomCity() {
+    var city = Math.floor(Math.random()*canadian_cities.length);
+    document.getElementById("randomCity").innerText = canadian_cities[city];
+}
+
 $(document).ready(function () {
 
 
@@ -19,8 +24,7 @@ $(document).ready(function () {
         targetContent.toggleClass('in');
         $(this).toggleClass('collapsed');
     });
-
-
+    setInterval(writeRandomCity,1750);
 
     /*=================================
      ||          Turn off Google Map zooming
