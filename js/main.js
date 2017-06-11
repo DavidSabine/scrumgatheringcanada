@@ -1,13 +1,3 @@
-function SendLinkByMail(subject) {
-    var subject= subject;
-    var body = "Hello Scrum Gathering organizers,\r\n\r\n";
-    var uri = "mailto:1st@scrumgathering.ca?subject=";
-    uri += encodeURIComponent(subject);
-    uri += "&body=";
-    uri += encodeURIComponent(body);
-    window.open(uri);
-}
-
 function writeRandomCity() {
     var city = Math.floor(Math.random()*canadian_cities.length);
     document.getElementById("randomCity").innerText = canadian_cities[city];
@@ -16,7 +6,6 @@ function writeRandomCity() {
 $(document).ready(function () {
 
 
-    $('.emailaddress').text("1st@scrumgathering.ca");
     $('.emailaddress').text("1st@scrumgathering.ca");
     $('.schedule_expand').on('click', function(e){
         e.preventDefault();
