@@ -6,7 +6,8 @@ function writeRandomCity() {
 $(document).ready(function () {
 
 
-    $('.emailaddress').text("1st@scrumgathering.ca");
+    $('.1stemailaddress').text("1st@scrumgathering.ca");
+    $('.sponsoremailaddress').text("sponsors@scrumgathering.ca");
     $('.schedule_expand').on('click', function(e){
         e.preventDefault();
         var targetContent = $(this).closest('.schedule_item').find('.panel-collapse');

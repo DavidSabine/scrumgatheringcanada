@@ -666,24 +666,29 @@ a:focus, a:hover{
 /* 
  * 6.8 Section: FAQ
  */
-.faq .panel-heading {
+.faq .panel-heading,
+.sponsors .panel-heading {
     cursor: pointer;
 }
-.faq .faq-toggle.collapsed::before {
+
+.faq .faq-toggle.collapsed::before,
+.sponsors .faq-toggle.collapsed::before {
     font-family: "Ionicons";
-    content: "\f218";
+    content: "\f143";
     -webkit-transition: 0.5s linear ease-out;
     transition: 0.5s linear ease-out;
     position: absolute;
     left: 15px;
 }
-.faq .faq-toggle::before {
+.faq .faq-toggle::before,
+.sponsors .faq-toggle::before {
     position: absolute;
     left: 15px;
     font-family: "Ionicons";
     content: "\f209";
 }
-.faq .panel-group .panel + .panel {
+.faq .panel-group .panel + .panel,
+.sponsors .panel-group .panel + .panel {
     margin-top: 15px;
 }
 .faq .panel-default > .panel-heading {
@@ -693,7 +698,8 @@ a:focus, a:hover{
     border-radius: 0;
     padding: 0;
 }
-.faq .panel-default > .panel-heading a {
+.faq .panel-default > .panel-heading a,
+.sponsors .panel-default > .panel-heading a {
     position: relative;
     display: block;
     text-decoration: none;
@@ -848,7 +854,7 @@ address {
 /*
 Sponsorship
 */
-.sponsors{
+.sponsors .row:last-child{
     text-align: center;
 }
 .sponsors img{

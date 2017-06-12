@@ -125,127 +125,6 @@
     </div><!-- container -->
 </section>
 
-<section id="contribution" class="section bg-image-2 contribution hide">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h3 class="text-uppercase mt0 font-400">Submit Your Contribution Work</h3>
-
-                <p>You've inspired new consumer, racked up click-thru's, blown-up brand awareness. We can't give you back the weekends you worked, or erase the pain of being forced to make the logo bigger. But if you submit your best work.</p>
-
-                <a class="btn btn-white" data-toggle="modal" data-target="#submission">Submit</a>
-                <div id="submission" class="modal fade" tabindex="-1" role="dialog">
-                    <div class="modal-dialog modal-lg">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
-                                        aria-hidden="true">&times;</span></button>
-                                <h3 class="black">SUBMIT YOUR CONTRIBUTION WORK</h3>
-                            </div>
-                            <div class="modal-body">
-                                <section>
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <div class="row">
-                                                <div class="col-sm-12">
-                                                    <p class="pdf">
-                                                        Submitted papers will be reviewed by committee reviewers and be
-                                                        scheduled for either oral or poster presentation during the
-                                                        conferences if the topic is relevant and the quality of the data
-                                                        justifies scheduling. Irrelevant or poor-quality abstracts may
-                                                        be rejected. Reviewed and accepted papers will receive
-                                                        notification information via email on Notification day, and will
-                                                        be requested to register before the Registration Deadline.
-                                                    </p>
-                                                    <p class="pdf">
-                                                        <span class="ion-ios-paper"></span>
-                                                    </p>
-                                                    <p class="down">
-                                                        Download Our all Price and Submit Methods
-                                                    </p>
-                                                </div>
-                                            </div>
-
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <h3 class="section-title">Submission Form</h3>
-                                                </div>
-                                            </div>
-
-                                            <form action="php/submission.php" id="submission_form" method="post">
-                                                <div class="row">
-                                                    <div class="col-md-12" id="registration-msg" style="display:none;">
-                                                        <div class="alert"></div>
-                                                    </div>
-                                                    <div class="col-md-10 col-md-offset-1">
-                                                        <div class="row">
-                                                            <div class="col-sm-6">
-                                                                <div class="form-group">
-                                                                    <input type="text" class="form-control"
-                                                                           placeholder="First Name"
-                                                                           name="fname" required>
-                                                                </div> <!-- /.form-group -->
-                                                            </div> <!-- /.col-sm-6 -->
-                                                            <div class="col-sm-6">
-                                                                <div class="form-group">
-                                                                    <input type="text" class="form-control"
-                                                                           placeholder="Last Name"
-                                                                           name="lname" required>
-                                                                </div> <!-- /.form-group -->
-                                                            </div> <!-- /.col-sm-6 -->
-                                                            <div class="col-sm-6">
-                                                                <div class="form-group">
-                                                                    <input type="email" class="form-control"
-                                                                           placeholder="Email" name="email"
-                                                                           required>
-                                                                </div> <!-- /.form-group -->
-                                                            </div> <!-- /.col-sm-6 -->
-                                                            <div class="col-sm-6">
-                                                                <div class="form-group">
-                                                                    <input type="text" class="form-control"
-                                                                           placeholder="Subject" id="subject"
-                                                                           name="subject" required>
-                                                                </div> <!-- /.form-group -->
-                                                            </div> <!-- /.col-sm-6 -->
-                                                            <div class="col-sm-12">
-                                                                <div class="form-group">
-                                                                    <textarea class="form-control" rows="6"
-                                                                              placeholder="Message"
-                                                                              name="message"></textarea>
-                                                                </div> <!-- /.form-group -->
-                                                            </div> <!-- /.col-sm-12 -->
-                                                            <div class="col-sm-6">
-
-                                                            </div>
-                                                            <div class="text-center col-sm-6">
-                                                                <button type="submit" class="btn btn-black"
-                                                                        id="sfsubmit">Submit
-                                                                </button>
-                                                            </div>
-                                                        </div> <!-- /.row -->
-                                                    </div> <!-- /.col-md-10.col-md-offset-1 -->
-                                                </div>
-                                            </form>
-
-                                            <div id="submissionFormResponse"></div>
-
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                            <!--  <div class="modal-footer">
-                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                 <button type="button" class="btn btn-primary">Save changes</button>
-                             </div> -->
-                        </div><!-- /.modal-content -->
-                    </div><!-- /.modal-dialog -->
-                </div><!-- /.modal -->
-
-            </div>
-        </div>
-    </div>
-</section>
-
 <section id="schedule" class="section schedule">
     <div class="container">
         <div class="row">
@@ -866,14 +745,40 @@
         </div>
         <div class="sponsors">
             <div class="row">
+                <div class="col-md-12">
+                    <div class="panel-group" id="sponsoraccordion" role="tablist" aria-multiselectable="true">
+
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="sponsorHeadingOne">
+                                <h4 class="panel-title">
+                                    <a class="faq-toggle collapsed" role="button" data-toggle="collapse"
+                                       data-parent="#sponsoraccordion" href="#sponsorCollapseOne" aria-expanded="true"
+                                       aria-controls="sponsorCollapseOne"> How to become a sponsor of Regional Scrum Gathering<sup>®</sup> Canada</a>
+                                </h4>
+                            </div>
+                            <div id="sponsorCollapseOne" class="panel-collapse collapse" role="tabpanel"
+                                 aria-labelledby="sponsorHeadingOne">
+                                <div class="panel-body">
+                                    <ol>
+                                        <li><a href="//onedrive.live.com/download?cid=C25342918C60D476&amp;resid=C25342918C60D476%21559&amp;authkey=AHoeNCe60jSMLso">Download the Sponsorship Prospectus</a></li>
+                                        <li>Then write to <span class="sponsoremailaddress"></span>.  We will respond by email &amp; phone.</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
                  <div class="col-md-6">
                     <img src="images/arsensa_rgb.svg" alt="arSensa Inc." class="img-responsive">
                     <h5 class="sponsor-caption"><a style="visibility:hidden;" class="btn btn-white" href="#">&nsp;</a>Maple Leaves Sponsor<a style="visibility:hidden;" class="btn btn-white" href="#">&nsp;</a></h5>
                 </div>
                  <div class="col-md-6">
                     <img src="images/arsensa_rgb.svg" alt="arSensa Inc." class="img-responsive" style="opacity:0;">
-                    <h5 class="sponsor-caption"><a class="btn btn-white inpage" href="#sponsorship">Your Logo Here</a></h5>
-                </div>
+                        <h5 class="sponsor-caption"><a class="btn btn-white inpage" href="#sponsorship">Your Logo Here</a></h5>
+                 </div>
 <!--                <div class="col-md-4 hide">
                     <img src="//markup.themewagon.com/conference_pro/assets/images/sponsor/s-3.png" alt="" class="img-responsive">
                     <h5 class="sponsor-caption">Silver Sponsorship</h5>
@@ -919,7 +824,7 @@
                             <h4 class="panel-title">
                                 <a class="faq-toggle collapsed" role="button" data-toggle="collapse"
                                    data-parent="#accordion" href="#collapseOne" aria-expanded="true"
-                                   aria-controls="collapseOne"> What is the price of the ticket ?</a>
+                                   aria-controls="collapseOne"> What is the price of the ticket</a>
                             </h4>
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse" role="tabpanel"
@@ -941,7 +846,7 @@
                             <h4 class="panel-title">
                                 <a class="faq-toggle collapsed" role="button" data-toggle="collapse"
                                    data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
-                                   aria-controls="collapseTwo"> What is included in my registration ?</a>
+                                   aria-controls="collapseTwo"> What is included in my registration</a>
                             </h4>
                         </div>
                         <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
@@ -959,7 +864,7 @@
                             <h4 class="panel-title">
                                 <a class="faq-toggle collapsed" role="button" data-toggle="collapse"
                                    data-parent="#accordion" href="#collapseThree" aria-expanded="false"
-                                   aria-controls="collapseThree"> Why Toronto ?  Did you consider <span id="randomCity">_____</span> ?</a>
+                                   aria-controls="collapseThree"> Why Toronto…Did you consider <span id="randomCity">_____</span></a>
                             </h4>
                         </div>
                         <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
@@ -980,7 +885,7 @@
                             <h4 class="panel-title">
                                 <a class="faq-toggle collapsed" role="button" data-toggle="collapse"
                                    data-parent="#accordion" href="#collapseFour" aria-expanded="false"
-                                   aria-controls="collapseFour"> Why Spring, Not Earlier ?</a>
+                                   aria-controls="collapseFour"> Why Spring, Not Earlier</a>
                             </h4>
                         </div>
 
@@ -1003,7 +908,7 @@
                             <h4 class="panel-title">
                                 <a class="faq-toggle collapsed" role="button" data-toggle="collapse"
                                    data-parent="#accordion" href="#collapseFive" aria-expanded="false"
-                                   aria-controls="collapseFive"> Can I volunteer ?</a>
+                                   aria-controls="collapseFive"> Can I volunteer</a>
                             </h4>
                         </div>
 
@@ -1028,7 +933,7 @@
                 <h3 class="section-title">Event Location</h3>
                 <address>
                     <p><br><a href="//twitter.com/CanadaScrum">@CanadaScrum</a><br>
-                        <span class="emailaddress"></span><br>
+                        <span class="1stemailaddress"></span><br>
                         Toronto<br>
                         Ontario <br>Venue TBA: Entertainment District</p>
                 </address>
