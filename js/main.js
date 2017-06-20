@@ -181,13 +181,14 @@ $(document).ready(function () {
 // Countdown jquery
 
 $(function () {
-    var day = 26,
+    var hour = 16,
+        day = 25,
         month = 03,
         year = 2018;
-    var austDay = new Date(year, month - 1, day);
-    $('#defaultCountdown').countdown({until: austDay, format:'d'});
+    var austDay = new Date(year, month - 1, day, hour);
+    // $('#defaultCountdown').countdown({until: austDay, format:'d'});
     // $('#defaultCountdown').countdown({until: austDay, format:'dHMS'});
-    // $('#defaultCountdown').countdown({until: austDay, format:'O'});
+    $('#defaultCountdown').countdown({until: austDay, format:'OdH'});
     $('#year').text(austDay.getFullYear());
 });
 
