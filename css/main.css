@@ -857,10 +857,12 @@ Sponsorship
 .sponsors .row:last-child{
     text-align: center;
 }
-.sponsors img{
+.sponsors .row:last-child>div{
     border: 1px solid #ddd;
+}
+.sponsors img{
     width: 100%;
-    padding:10% 20%;
+    padding:10% 10%;
 }
 .sponsor-caption{
     background-color: #000;
