@@ -916,6 +916,7 @@ Countdown jquery
     min-width: 150px;
     height:100%;
     width:100%;
-    margin: auto;
-    background: url(../images/TORRT_L001a_ctr_7447U_CMYK_24672_EPS.svg) no-repeat center center/contain;
+    margin: 25px auto;
+    /*background: url(../images/TORRT_L001a_ctr_7447U_CMYK_24672_EPS.svg) no-repeat center center/contain;*/
+    background: url(../images/TORRT_L007a_stk_7447U_CMYK_24694_EPS.svg) no-repeat center center/contain;
 }
