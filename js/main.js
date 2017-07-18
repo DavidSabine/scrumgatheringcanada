@@ -5,7 +5,7 @@ function writeRandomCity() {
 
 $(document).ready(function () {
 
-
+    $('.davidsphone').text("416-254-3665 (David Sabine's mobile phone.)");
     $('.1stemailaddress').text("1st@scrumgathering.ca");
     $('.sponsoremailaddress').text("sponsors@scrumgathering.ca");
     $('.schedule_expand').on('click', function(e){
