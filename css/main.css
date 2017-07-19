@@ -844,6 +844,7 @@ address {
 /*
 Sponsorship
 */
+.sponsors .logos,
 .sponsors .row:last-child{
     text-align: center;
 }
@@ -851,8 +852,7 @@ Sponsorship
     border: 1px solid #ddd;
 }
 .sponsors img{
-    width: 100%;
-    padding:10% 10%;
+    padding:5% 5%;
 }
 .sponsor-caption{
     background-color: #000;
