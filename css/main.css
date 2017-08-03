@@ -263,7 +263,7 @@ ul li {
 
 @media (min-width: 768px) {
     .section {
-        padding: 90px 0;
+        padding: 110px 0;
     }
 
     .section-title {
@@ -861,11 +861,12 @@ address {
 Sponsorship
 */
 .sponsors .logos,
-.sponsors .row:last-child{
+.sponsors .row:first-child{
     text-align: center;
 }
-.sponsors .row:last-child>div{
+.sponsors .row:first-child>div{
     border: 1px solid #ddd;
+    margin-bottom:70px;
 }
 .sponsors img{
     padding:5% 5%;
