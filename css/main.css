@@ -382,7 +382,7 @@ ul li {
 }
 .site-header .intro h1 {
     margin-top: 0px;
-    font-size: 24px;
+    font-size: 20px;
 }
 .site-header .intro p {
     font-size: 20px;
@@ -405,6 +405,11 @@ ul li {
     min-width: 6em;
     margin: auto 0 auto 0;
     }
+
+    .site-header .intro h1 {
+    font-size: 36px;
+}
+
 }
 /* 
  * 6.0 Section
