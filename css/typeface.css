@@ -1,35 +1,49 @@
-/* TypeScale from
-http://type-scale.com/?size=48&scale=1.200&text=A Visual Type Scale&webfont=Open%2BSans%7CRoboto&font-family='Open%20Sans'&font-weight=400&font-family-headers=&font-weight-headers=inherit&background-color=white&font-color=%23333
-*/
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,700);
 
-html {line-height: 1.6}
-
-/*body {
-  background-color: white;
-  font-family: 'Roboto';
-  color: #333;
+html {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px
+	line-height: 1.6;
 }
-*/
-p {margin-bottom: 1.6em;}
-
-/*h1, h2, h3, h4 {
-  font-family: 'Open Sans';
-  font-weight: inherit;
-  color:#ff8000;
+body {
+	color: #4e4e4e;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	-webkit-font-smoothing: antialiased
 }
-*/
-/*h1 {
-  font-size: 2.074em;
+a {
+	color: #000;
+	color: rgba(169, 68, 66, 1)
 }
-*/
-/*h2 {font-size: 1.728em;}*/
-
-/*h3 {font-size: 1.44em;}*/
-
-/*h4 {font-size: 1.2em;}*/
-
-/*small {font-size: 0.833em;}*/
-
-/*a, a:visited, a:hover {
-	color:#118bd6;
-}*/
+p {
+	margin-bottom:1.6em;
+}
+p a {
+	text-decoration: underline
+}
+a:focus {
+	outline: none
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 700;
+	letter-spacing: 2.3px
+}
+ul li {
+	font-weight: 700;
+	margin-bottom: 10px
+}
+.list-arrow-right {
+	list-style-type: none;
+	padding: 0;
+}
+.list-arrow-right li {
+	padding-left: 20px;
+	position: relative;
+}
+.list-arrow-right li::before {
+	color: #4e4e4e;
+	font-family: "Ionicons";
+	left: 0;
+	position: absolute;
+}
