@@ -1,13 +1,23 @@
-/*global*/
-.valign-center {
-    align-items: center;
-    display: flex;
-    display: -ms-flexbox;
-    display: -webkit-box;
-    display: -webkit-flex;
-    -ms-flex-align: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
+/*global & in-page*/
+.about .section-title {
+    margin: 0 0 25px;
+}
+.bg-image, .bg-image-1, .bg-image-2 {
+    position: relative;
+}
+.bg-image::before, .bg-image-1::before, .bg-image-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+.bg-image-1 {
+    background: url("../images/canadian_landscape_3_by_karinbreem.jpg") no-repeat center center/cover;
+}
+.bg-image-1::before {
+    background-color: rgba(0, 0, 0, 0.3);
 }
 .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
     outline: none;
@@ -27,6 +37,173 @@
     -webkit-transition-duration: 0.3s;
     -webkit-transition-property: -webkit-transform;
 }
+.btn-black {
+    background-color: #000;
+    border: 1px solid transparent;
+    color: #fff;
+    width: 100%;
+}
+.btn-black:hover, .btn-black:focus {
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+}
+.btn-white {
+    background-color: #fff;
+    border: 1px solid transparent;
+    color: #000;
+}
+.btn-white:hover {
+    background: #000;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.valign-center {
+    align-items: center;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+}
+.facts {
+    padding: 100px 0;
+}
+.facts h3 {
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.important-date {
+    background-color: #f8f8f8;
+}
+
+/*nav and header */
+.navbar-right {
+    margin-top: 28px;
+}
+.navbar-custom {
+    background-color: #000;
+    border: 0;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: all 0.2s linear 0s;
+    -webkit-transition: all 0.2s linear 0s;
+}
+.navbar-custom .navbar-nav li {
+    margin: 0;
+}
+.navbar-custom .navbar-nav > li > a {
+    border-bottom: 1px solid transparent;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.navbar-custom .navbar-nav > li > a:focus, .navbar-custom .navbar-nav > li > a:hover {
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.5);
+}
+.navbar-custom .navbar-nav > .active > a {
+    border-color: rgb(255, 255, 255);
+}
+.navbar-toggle {
+    border: 0;
+    border-radius: 0;
+    margin-top: 2px;
+}
+.navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.navbar-solid {
+    background-color: #000 !important;
+    padding: 0 !important;
+    transition: all 0.2s linear 0s;
+    -webkit-transition: all 0.2s linear 0s;
+}
+@media (min-width:768px) {
+    .navbar-custom {
+        background-color: transparent;
+        padding-top: 10px;
+    }
+}
+.site-branding {
+    float: left;
+    margin-top: 0;
+}
+.site-branding .logo {
+    background: url(../images/SA_RegionalGathering_CanadaLogo-02.svg) no-repeat center center/contain;
+    display: block;
+    height: 100%;
+    margin: auto 0 auto 1em;
+    min-height: 3em;
+    min-width: 3em;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    width: 100%;
+}
+.navbar-solid .site-branding .logo {
+    opacity: 1;
+}
+@media (min-width:768px) {
+    .site-branding {
+        padding-left: 1em;
+    }
+    .site-branding .logo {
+        margin: auto 0 auto 0;
+        min-height: 6em;
+        min-width: 6em;
+    }
+}
+.site-header {
+    background: url("../images/toronto-office.jpg") no-repeat center left/cover;
+    height: 100%;
+    min-height: 100vh;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.site-header::before {
+    background-color: rgba(0, 0, 0, 0.3);
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+    bottom: 0;
+    content: "";
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 0;
+}
+.site-header .intro {
+    color: #fff;
+    padding: 0 15px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    z-index: 1;
+}
+.site-header .intro h1 {
+    font-size: 20px;
+    margin-top: 0px;
+}
+.site-header .intro img {
+    height: 25vh;
+}
+@media (min-width:768px) {
+    .site-header .intro h1 {
+        font-size: 36px;
+    }
+    .site-header .intro img {
+        height: 50vh;
+    }
+}
+
 /*footer*/
 .social-block {
     list-style-type: none;

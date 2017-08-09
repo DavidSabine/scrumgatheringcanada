@@ -1,0 +1,12 @@
+/*modelled after: http://markup.themewagon.com/conference_pro/*/
+body {
+    position: relative;
+}
+.section {
+    padding: 70px 0;
+}
+@media (min-width: 768px) {
+    .section {
+        padding: 110px 0;
+    }
+}
