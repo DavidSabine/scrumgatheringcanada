@@ -2,6 +2,19 @@
 .about .section-title {
     margin: 0 0 25px;
 }
+.about figure {
+    margin-bottom: 25px;
+    text-align: center;
+}
+.about figure img {
+    margin:auto;
+}
+@media (min-width: 768px) {
+    .about figure {
+        margin-bottom: 0px;
+        text-align: left;
+    }
+}
 .bg-image, .bg-image-1, .bg-image-2 {
     position: relative;
 }
@@ -202,6 +215,20 @@
     .site-header .intro img {
         height: 50vh;
     }
+}
+.partner {
+    background-color: #f8f8f8;
+}
+.partner .partner-box {
+    display: block;
+    height:100%;
+    margin: 25px auto;
+    min-height: 150px;
+    min-width: 150px;
+    width:100%;
+}
+.partner .partner-box-1 {
+    background: url(../images/scrumalliance-logo.svg) no-repeat center center/contain;
 }
 
 /*footer*/

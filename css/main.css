@@ -117,43 +117,6 @@ a:focus, a:hover{
     border: 1px solid #fff;
 }
 
-.partner {
-    background-color: #f8f8f8;
-}
-.partner .partner-box {
-    display: block;
-    min-height: 150px;
-    min-width: 150px;
-    height:100%;
-    width:100%;
-    margin: 25px auto;
-}
-.partner .partner-box-1 {
-    background: url(../images/scrumalliance-logo.svg) no-repeat center center/contain;
-}
-/*.partner .partner-box-2 {
-    background: url(../images/TORRT_L001a_ctr_7447U_CMYK_24672_EPS.svg) no-repeat center center/contain;
-}
-*//*
-.partner .partner-box-3 {
-    background: url(//markup.themewagon.com/conference_pro/images/partner/partner-3.png) no-repeat center center/contain;
-}
-.partner .partner-box-4 {
-    background: url(//markup.themewagon.com/conference_pro/images/partner/partner-4.png) no-repeat center center/contain;
-}
-.partner .partner-box-5 {
-    background: url(//markup.themewagon.com/conference_pro/images/partner/partner-5.png) no-repeat center center/contain;
-}
-.partner .partner-box-6 {
-    background: url(//markup.themewagon.com/conference_pro/images/partner/partner-6.png) no-repeat center center/contain;
-}
-.partner .partner-box-7 {
-    background: url(//markup.themewagon.com/conference_pro/images/partner/partner-7.png) no-repeat center center/contain;
-}
-.partner .partner-box-8 {
-    background: url(//markup.themewagon.com/conference_pro/images/partner/partner-8.png) no-repeat center center/contain;
-}
-*/
 /* 
  * 6.8 Section: FAQ
  */
@@ -271,10 +234,6 @@ li.grid-item{
 
     .section-title {
         margin: 0 0 30px;
-    }
-
-    figure {
-        margin-bottom: 0;
     }
 }
 @media (min-width: 992px) {
