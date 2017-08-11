@@ -7,9 +7,9 @@
     text-align: center;
 }
 .about figure img {
-    margin:auto;
+    margin: auto;
 }
-@media (min-width: 768px) {
+@media (min-width:768px) {
     .about figure {
         margin-bottom: 0px;
         text-align: left;
@@ -71,15 +71,45 @@
     border: 1px solid #fff;
     color: #fff;
 }
-.valign-center {
-    align-items: center;
-    display: flex;
-    display: -ms-flexbox;
-    display: -webkit-box;
-    display: -webkit-flex;
-    -ms-flex-align: center;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
+.countdown {
+    background-color: #000;
+    padding: 60px 0;
+}
+.countdown .section-title {
+    color: #fff;
+}
+@media (min-width:768px) {
+    .countdown .section-title {
+        margin: 0;
+        text-align: right;
+    }
+}
+.is-countdown {
+    background-color: #000;
+    border-color: transparent;
+    color: #fff;
+}
+.countdown-section {
+    font-weight: 700;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+}
+.countdown-amount {
+    border-bottom: 2px solid #262626;
+    padding-bottom: 10px;
+}
+.countdown-period {
+    margin-top: 20px;
+}
+@media (min-width:768px) {
+    .countdown .row {
+        display: table;
+    }
+    .countdown [class*="col-"] {
+        display: table-cell;
+        float: none;
+        vertical-align: middle;
+    }
 }
 .facts {
     padding: 100px 0;
@@ -91,6 +121,39 @@
     margin-top: 30px;
     text-align: center;
     text-transform: uppercase;
+}
+.faq .panel-heading {
+    cursor: pointer;
+}
+.faq .faq-toggle.collapsed::before {
+    content: "\f143";
+    font-family: "Ionicons";
+    left: 15px;
+    position: absolute;
+    transition: 0.5s linear ease-out;
+    -webkit-transition: 0.5s linear ease-out;
+}
+.faq .faq-toggle::before {
+    content: "\f209";
+    font-family: "Ionicons";
+    left: 15px;
+    position: absolute;
+}
+.faq .panel-group .panel + .panel {
+    margin-top: 15px;
+}
+.faq .panel-default > .panel-heading {
+    background-color: #000000;
+    border-color: #000;
+    border-radius: 0;
+    color: #fff;
+    padding: 0;
+}
+.faq .panel-default > .panel-heading a {
+    display: block;
+    padding: 15px 15px 15px 35px;
+    position: relative;
+    text-decoration: none;
 }
 .important-date {
     background-color: #f8f8f8;
@@ -216,22 +279,73 @@
         height: 50vh;
     }
 }
+.sponsors .row {
+    text-align: center;
+}
+.sponsors .row:first-child>div {
+    border: 1px solid #ddd;
+    margin-bottom: 70px;
+}
+.sponsors img {
+    padding: 5%;
+}
+.sponsor-caption {
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 0;
+    padding: 15px;
+    text-transform: uppercase;
+}
 .partner {
     background-color: #f8f8f8;
 }
 .partner .partner-box {
     display: block;
-    height:100%;
+    height: 100%;
     margin: 25px auto;
     min-height: 150px;
     min-width: 150px;
-    width:100%;
+    width: 100%;
 }
 .partner .partner-box-1 {
     background: url(../images/scrumalliance-logo.svg) no-repeat center center/contain;
 }
+.valign-center {
+    align-items: center;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: -webkit-flex;
+    -ms-flex-align: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+}
+.venue-logo {
+    background: url(../images/TORRT_L007a_stk_7447U_CMYK_24694_EPS.svg) no-repeat center center/contain;
+    display: block;
+    height: 100%;
+    margin: 25px auto;
+    min-height: 150px;
+    min-width: 150px;
+    width: 100%;
+}
 
 /*footer*/
+.site-footer {
+    background-color: #000;
+    color: #fff;
+    padding: 30px 0 10px;
+    text-align: center;
+}
+.site-footer .site-info {
+    font-weight: 400;
+    letter-spacing: 2.3px;
+    margin-bottom: 10px;
+}
+.site-footer .site-info a {
+    color: #fff;
+}
 .social-block {
     list-style-type: none;
     padding: 0;
@@ -243,7 +357,7 @@
     vertical-align: middle;
 }
 .social-block li a {
-    color: #4e4e4e;
+    color: #fff;
     display: inline-block;
     height: 32px;
     width: 32px;
@@ -252,5 +366,5 @@
     font-size: 1.5em;
 }
 .social-block li a:hover, .social-block li a:focus {
-    color: #000;
+    opacity: 0.5;
 }

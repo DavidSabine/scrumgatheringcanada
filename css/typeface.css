@@ -43,7 +43,7 @@ ul li {
 @media (min-width:768px) {
 	.section-title {
 		letter-spacing: 2.3px;
-		margin: 0 0 60px;
+		margin: 0 0 25px;
 		text-align: left;
 	}
 }
@@ -60,7 +60,7 @@ ul li {
 }
 .list-arrow-right li::before {
 	color: #4e4e4e;
-    content: "\f3d3";
+	content: "\f3d3";
 	font-family: "Ionicons";
 	left: 0;
 	position: absolute;
