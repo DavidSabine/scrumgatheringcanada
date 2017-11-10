@@ -1,4 +1,7 @@
 /*global & in-page*/
+.speaker-thumbnail {
+    max-width:4em;
+}
 .about .section-title {
     margin: 0 0 25px;
 }

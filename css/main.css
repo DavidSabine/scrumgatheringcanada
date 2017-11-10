@@ -40,6 +40,7 @@ a:focus, a:hover{
     text-decoration: none;
 }
 .full-width{
+    display:block;
     width: 100%;
     position: relative;
     text-transform: uppercase;
