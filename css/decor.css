@@ -1,6 +1,8 @@
 /*global & in-page*/
 .speaker-thumbnail {
+    position:relative;
     max-width:4em;
+    max-height:4em;
 }
 .about .section-title {
     margin: 0 0 25px;
