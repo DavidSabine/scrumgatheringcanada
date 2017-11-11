@@ -10,3 +10,6 @@ body {
         padding: 110px 0;
     }
 }
+
+/* dev helpers */
+#countdown,#about,#important-date,#facts,#location,#sponsorship,#faq,#partner,#site-header	 {display:none;}
