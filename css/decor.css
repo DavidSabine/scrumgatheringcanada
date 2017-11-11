@@ -82,7 +82,7 @@
 }
 .schedule_item h5 {
     font-size: 114%;
-    text-align:justify;
+    text-align:left;
 }
 .schedule_item h5+p {
     text-align:center;
@@ -148,6 +148,9 @@
     border-color: #000000;
     color: #ffffff;
     cursor: pointer;
+}
+.schedule_item .img-responsive{
+    width:100%;
 }
 .speaker-thumbnail {
     max-width:3em;
