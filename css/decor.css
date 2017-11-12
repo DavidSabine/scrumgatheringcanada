@@ -69,6 +69,12 @@
 }
 
 /* schedule */
+.tooltip.top .tooltip-inner {
+    background-color:rgba(169, 68, 66, 1);
+}
+.tooltip.top .tooltip-arrow {
+      border-top-color: rgba(169, 68, 66, 1);
+}
 .schedule {
     background-color: #f8f8f8;
 }
