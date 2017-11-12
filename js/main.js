@@ -173,11 +173,17 @@ $(function () {
         day = 25,
         month = 03,
         year = 2018;
-    var austDay = new Date(year, month - 1, day, hour);
-    // $('#defaultCountdown').countdown({until: austDay, format:'d'});
-    // $('#defaultCountdown').countdown({until: austDay, format:'dHMS'});
-    $('#defaultCountdown').countdown({until: austDay, format:'OdH'});
-    $('#year').text(austDay.getFullYear());
+    var conferenceDay = new Date(year, month - 1, day, hour);
+    var dayInMilliseconds = 1000*60*60*24;
+    var daysUntilConference = (conferenceDay.getTime() - new Date().getTime())/dayInMilliseconds;
+    console.log(daysUntilConference);
+    switch(true) {
+        case daysUntilConference > 31:
+            $('#defaultCountdown').countdown({until: conferenceDay, format:'OdH'});
+            break;
+        default:
+            $('#defaultCountdown').countdown({until: conferenceDay, format:'dHMS'});
+    } 
 });
 
 $(function () {
