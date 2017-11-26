@@ -1,6 +1,6 @@
 # Scrum Gathering Canada
 
-A site created by David Sabine and maintained by Ontario Scrum Community.
+A site created by David Sabine and maintained by Ontario Scrum Community<sup>®</sup>.
 
 This site's primary purpose is to advertise the upcoming Regional Scrum Gathering<sup>®</sup> Canada.
 
