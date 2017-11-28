@@ -3,11 +3,11 @@ body {
     position: relative;
 }
 .section {
-    padding: 70px 0;
+    padding: 4.375em 0;
 }
 @media (min-width: 768px) {
     .section {
-        padding: 110px 0;
+        padding: 6.85em 0;
     }
 }
 

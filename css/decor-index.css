@@ -1,0 +1,181 @@
+/* countdown & facts */
+.countdown {
+    background-color: #000;
+    padding: 60px 0;
+}
+.countdown .section-title {
+    color: #fff;
+}
+@media (min-width:768px) {
+    .countdown .section-title {
+        margin: 0;
+        text-align: right;
+    }
+}
+.is-countdown {
+    background-color: #000;
+    border-color: transparent;
+    color: #fff;
+}
+.countdown-section {
+    font-weight: 700;
+    letter-spacing: 2.7px;
+    text-transform: uppercase;
+}
+.countdown-amount {
+    border-bottom: 2px solid #262626;
+    padding-bottom: 10px;
+}
+.countdown-period {
+    margin-top: 20px;
+}
+@media (min-width:768px) {
+    .countdown .row {
+        display: table;
+    }
+    .countdown [class*="col-"] {
+        display: table-cell;
+        float: none;
+        vertical-align: middle;
+    }
+}
+.facts {
+    padding: 100px 0;
+}
+.facts h3 {
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/*faqs*/
+.faq .panel-heading {
+    cursor: pointer;
+}
+.faq .faq-toggle.collapsed::before {
+    content: "\f143";
+    font-family: "Ionicons";
+    left: 15px;
+    position: absolute;
+    transition: 0.5s linear ease-out;
+    -webkit-transition: 0.5s linear ease-out;
+}
+.faq .faq-toggle::before {
+    content: "\f209";
+    font-family: "Ionicons";
+    left: 15px;
+    position: absolute;
+}
+.faq .panel-group .panel + .panel {
+    margin-top: 15px;
+}
+.faq .panel-default > .panel-heading {
+    background-color: #000000;
+    border-color: #000;
+    border-radius: 0;
+    color: #fff;
+    padding: 0;
+}
+.faq .panel-default > .panel-heading a {
+    display: block;
+    padding: 15px 15px 15px 35px;
+    position: relative;
+    text-decoration: none;
+}
+.important-date {
+    background-color: #f8f8f8;
+}
+
+/*sponsors & partners*/
+.sponsors .row {
+    text-align: center;
+}
+.sponsors .row:first-child>div {
+    border: 1px solid #ddd;
+    margin-bottom: 70px;
+}
+.sponsors img {
+    padding: 5%;
+}
+.sponsor-caption {
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    margin-top: 0;
+    padding: 15px;
+    text-transform: uppercase;
+}
+.partner {
+    background-color: #f8f8f8;
+}
+.partner .partner-box {
+    display: block;
+    height: 100%;
+    margin: 25px auto;
+    min-height: 150px;
+    min-width: 150px;
+    width: 100%;
+}
+.partner .partner-box-1 {
+    background: url(../images/scrumalliance-logo.svg) no-repeat center center/contain;
+}
+.site-header {
+    background: url("../images/toronto-office.jpg") no-repeat center left/cover;
+    height: 100%;
+    min-height: 100vh;
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+.site-header::before {
+    background-color: rgba(0, 0, 0, 0.3);
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
+    bottom: 0;
+    content: "";
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 0;
+}
+.site-header .intro {
+    color: #fff;
+    padding: 0 15px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+    z-index: 1;
+}
+.site-header .intro h1 {
+    font-size: 20px;
+    margin-top: 0px;
+}
+.site-header .intro img {
+    height: 25vh;
+}
+@media (min-width:768px) {
+    .site-header .intro h1 {
+        font-size: 36px;
+    }
+    .site-header .intro img {
+        height: 50vh;
+    }
+}
+/* about */
+.about .section-title {
+    margin: 0 0 25px;
+}
+.about figure {
+    margin-bottom: 25px;
+    text-align: center;
+}
+.about figure img {
+    margin: auto;
+}
+@media (min-width:768px) {
+    .about figure {
+        margin-bottom: 0px;
+        text-align: left;
+    }
+}
