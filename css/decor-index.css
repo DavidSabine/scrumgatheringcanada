@@ -179,3 +179,10 @@
         text-align: left;
     }
 }
+/* keynote */
+.keynotes figure {
+    text-align:center;
+}
+.keynotes figure img {
+    margin: auto;
+}
