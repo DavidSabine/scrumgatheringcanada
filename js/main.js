@@ -15,159 +15,42 @@ $(document).ready(function () {
         $(this).toggleClass('collapsed');
     });
     setInterval(writeRandomCity,1750);
+    reOrderSponsors();
 
-    /*=================================
-     ||          Nivo-lightbox
-     ==================================*/
-
-    $('.gallery-item').nivoLightbox({
-        effect: 'fade',                             // The effect to use when showing the lightbox
-        theme: 'default',                             // The lightbox theme to use
-        keyboardNav: true,                             // Enable/Disable keyboard navigation (left/right/escape)
-        clickOverlayToClose: true,                    // If false clicking the "close" button will be the only way to close the lightbox
-        onInit: function () {
-        },                         // Callback when lightbox has loaded
-        beforeShowLightbox: function () {
-        },             // Callback before the lightbox is shown
-        afterShowLightbox: function (lightbox) {
-        },     // Callback after the lightbox is shown
-        beforeHideLightbox: function () {
-        },             // Callback before the lightbox is hidden
-        afterHideLightbox: function () {
-        },             // Callback after the lightbox is hidden
-        onPrev: function (element) {
-        },                 // Callback when the lightbox gallery goes to previous item
-        onNext: function (element) {
-        },                 // Callback when the lightbox gallery goes to next item
-        errorMessage: 'The requested content cannot be loaded. Please try again later.' // Error message when content can't be loaded
-    });
-
-    /*=================================
-     ||          Registration
-     ==================================*/
-    $("#registration_form").submit(function (e) {
-
-        e.preventDefault();
-        var $ = jQuery;
-
-        var postData = $(this).serializeArray(),
-            formURL = $(this).attr("action"),
-            $rfResponse = $('#registration_formResponse'),
-            $rfsubmit = $("#rfsubmit"),
-            rfsubmitText = $rfsubmit.text();
-
-        $rfsubmit.text("Processing...");
-
-
-        $.ajax(
-            {
-                url: formURL,
-                type: "POST",
-                data: postData,
-                success: function (data) {
-                    $rfResponse.html(data);
-                    $rfsubmit.text(rfsubmitText);
-                    $('#registration_form input[name=fname]').val('');
-                    $('#registration_form input[name=lname]').val('');
-                    $('#registration_form input[name=email]').val('');
-                    $('#registration_form input[name=age]').val('');
-                    $('#registration_form textarea[name=message]').val('');
-                },
-                error: function (data) {
-                    alert("Error occurd! Please try again");
-                }
-            });
-
-        return false;
-
-    });
-
-    /*=================================
-     ||          Submission
-     ==================================*/
-    $("#submission_form").submit(function (e) {
-
-        e.preventDefault();
-        var $ = jQuery;
-
-        var postData = $(this).serializeArray(),
-            formURL = $(this).attr("action"),
-            $sfResponse = $('#submissionFormResponse'),
-            $sfsubmit = $("#sfsubmit"),
-            sfsubmitText = $sfsubmit.text();
-
-        $sfsubmit.text("Processing...");
-
-
-        $.ajax(
-            {
-                url: formURL,
-                type: "POST",
-                data: postData,
-                success: function (data) {
-                    $sfResponse.html(data);
-                    $sfsubmit.text(sfsubmitText);
-                    $('#submission_form input[name=fname]').val('');
-                    $('#submission_form input[name=lname]').val('');
-                    $('#submission_form input[name=email]').val('');
-                    $('#submission_form input[name=subject]').val('');
-                    $('#submission_form textarea[name=message]').val('');
-                },
-                error: function (data) {
-                    alert("Error occurd! Please try again");
-                }
-            });
-
-        return false;
-
-    });
-
-    /*=================================
-     ||          Contact
-     ==================================*/
-    $("#contactForm").submit(function (e) {
-
-        e.preventDefault();
-        var $ = jQuery;
-
-        var postData = $(this).serializeArray(),
-            formURL = $(this).attr("action"),
-            $cfResponse = $('#contactFormResponse'),
-            $cfsubmit = $("#cfsubmit"),
-            cfsubmitText = $cfsubmit.text();
-
-        $cfsubmit.text("Sending...");
-
-
-        $.ajax(
-            {
-                url: formURL,
-                type: "POST",
-                data: postData,
-                success: function (data) {
-                    $cfResponse.html(data);
-                    $cfsubmit.text(cfsubmitText);
-                    $('#contactForm input[name=name]').val('');
-                    $('#contactForm input[name=email]').val('');
-                    $('#contactForm textarea[name=message]').val('');
-                },
-                error: function (data) {
-                    alert("Error occurd! Please try again");
-                }
-            });
-
-        return false;
-
-    });
-
-    if($('.schedule_tabs').length) {
-        //$('.schedule_tabs a:first').click();
-    }
 });
 
+function reOrderSponsors() {
+  shuffleElements(document.querySelectorAll('.northern-lights-sponsors .row.sponsor'));
+  shuffleElements(document.querySelectorAll('.sponsor-gallery img'));
+}
+
+function shuffleElements(nodelist) {
+ 
+    allElems = (function(){
+    var ret = [], l = nodelist.length;
+    while (l--) { ret[ret.length] = nodelist[l]; }
+    return ret;
+    })();
+ 
+    var shuffled = (function(){
+        var l = allElems.length, ret = [];
+        while (l--) {
+            var random = Math.floor(Math.random() * allElems.length),
+                randEl = allElems[random].cloneNode(true);
+            allElems.splice(random, 1);
+            ret[ret.length] = randEl;
+        }
+        return ret; 
+    })(), l = nodelist.length;
+ 
+    while (l--) {
+        nodelist[l].parentNode.insertBefore(shuffled[l], nodelist[l].nextSibling);
+        nodelist[l].parentNode.removeChild(nodelist[l]);
+    }
+ 
+}
 
 // Countdown jquery
-
 $(function () {
     var hour = 16,
         day = 25,
