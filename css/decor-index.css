@@ -189,3 +189,28 @@
 .keynotes figure img {
     margin: auto;
 }
+/* keynote */
+#programme {
+        background-color: #f8f8f8;
+
+}
+.speakergallery {
+    filter: grayscale(1);
+    width:9.09%;
+}
+#programme a:hover .speakergallery {
+    filter:grayscale(0);
+}
+#programme .speakergallery.caption {
+    background-color: #cccccc;
+    border-radius: 0.1em;
+    font-size: 1.5em;
+    left: 15%;
+    line-height: 100%;
+    margin-top: -1em;
+    opacity: 0.8;
+    padding: 1em;
+    position: absolute;
+    width: 70%;
+    top: 45%;
+}

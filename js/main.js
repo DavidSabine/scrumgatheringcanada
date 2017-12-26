@@ -22,6 +22,7 @@ $(document).ready(function () {
 function reOrderSponsors() {
   shuffleElements(document.querySelectorAll('.northern-lights-sponsors .row.sponsor'));
   shuffleElements(document.querySelectorAll('.great-lakes-sponsors .row.sponsor'));
+  shuffleElements(document.querySelectorAll('body.index #programme img'))
 }
 
 function shuffleElements(nodelist) {
