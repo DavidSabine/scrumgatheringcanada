@@ -1,8 +1,3 @@
-function writeRandomCity() {
-    var city = Math.floor(Math.random()*canadian_cities.length);
-    document.getElementById("randomCity").innerText = canadian_cities[city];
-}
-
 $(document).ready(function () {
 
     $('.davidsphone').text("416-254-3665 (David Sabine's mobile phone)");
@@ -14,10 +9,17 @@ $(document).ready(function () {
         targetContent.toggleClass('in');
         $(this).toggleClass('collapsed');
     });
-    setInterval(writeRandomCity,1750);
+    if($('#randomCity').length) {
+        setInterval(writeRandomCity,1750);
+    }
     reOrderSponsors();
 
 });
+
+function writeRandomCity() {
+    var city = Math.floor(Math.random()*canadian_cities.length);
+    document.getElementById("randomCity").innerText = canadian_cities[city];
+}
 
 function reOrderSponsors() {
   shuffleElements(document.querySelectorAll('.northern-lights-sponsors .row.sponsor'));
@@ -60,7 +62,6 @@ $(function () {
     var conferenceDay = new Date(year, month - 1, day, hour);
     var dayInMilliseconds = 1000*60*60*24;
     var daysUntilConference = (conferenceDay.getTime() - new Date().getTime())/dayInMilliseconds;
-    console.log(daysUntilConference);
     switch(true) {
         case daysUntilConference > 31:
             $('#defaultCountdown').countdown({until: conferenceDay, format:'OdH'});
@@ -81,10 +82,6 @@ $(function () {
 $(window).scroll(function () {
     handleTopNavAnimation();
 });
-
-// $(window).load(function () {
-//     handleTopNavAnimation();
-// });
 
 function handleTopNavAnimation() {
     var top = $(window).scrollTop();
