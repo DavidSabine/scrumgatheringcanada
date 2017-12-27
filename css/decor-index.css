@@ -196,8 +196,11 @@
 }
 .speakergallery {
     filter: grayscale(1);
-    width:9.09%;
+    /*width:9.09%;*/
 }
+#programme a {
+    position:relative;
+    }
 #programme a:hover .speakergallery {
     filter:grayscale(0);
 }
