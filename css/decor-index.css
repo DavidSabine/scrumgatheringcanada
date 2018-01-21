@@ -192,11 +192,11 @@
 /* keynote */
 #programme {
         background-color: #f8f8f8;
-
 }
 .speakergallery {
     filter: grayscale(1);
-    width:8.28%;
+    /*width:8.28%;*/
+    width:9.09%;
 }
 #programme a {
     position:relative;
