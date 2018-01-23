@@ -26,7 +26,7 @@ function writeRandomCity() {
 function reOrderSponsors() {
   shuffleElements(document.querySelectorAll('.northern-lights-sponsors .row.sponsor'));
   shuffleElements(document.querySelectorAll('.great-lakes-sponsors .row.sponsor'));
-  shuffleElements(document.querySelectorAll('.maple-leaves-sponsors .sponsor-gallery img'))
+  shuffleElements(document.querySelectorAll('.maple-leaves-sponsors .sponsor-gallery a'))
   shuffleElements(document.querySelectorAll('body.index #programme img'))
 }
 
