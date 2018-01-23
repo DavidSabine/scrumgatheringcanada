@@ -52,12 +52,6 @@
     border-bottom: 1px solid #d8d8d8;
     padding-top: 1.6em;
 }
-.schedule_item h3 {
-    font-size:1.36em;
-    font-weight:700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-}
 .schedule_item h4 {
     font-size: 90%;
     text-align:center;
@@ -82,28 +76,28 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
-                                .full-width-block{
-                                    display:block;
-                                    font-size: 1.36em;
-                                    font-weight: 700;
-                                    letter-spacing: 0.1em;
-                                    position: relative;
-                                    text-transform: uppercase;
-                                    width: 100%;
-                                }
-                                .full-width-block:after{
-                                    color: #000000;
-                                    content: "\f3d8";
-                                    font-family: 'Ionicons';
-                                    position: absolute;
-                                    right: 0;
-                                    transition: all 0.2s ease-in-out;
-                                }
-                                .collapsed>.full-width-block:after{
-                                    -ms-transform: rotate(180deg); /* IE 9 */
-                                    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
-                                    transform: rotate(180deg);
-                                }
+.full-width-block{
+    display:block;
+    font-size: 1.36em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    position: relative;
+    text-transform: uppercase;
+    width: 100%;
+}
+.full-width-block:after{
+    color: #000000;
+    content: "\f3d8";
+    font-family: 'Ionicons';
+    position: absolute;
+    right: 0;
+    transition: all 0.2s ease-in-out;
+}
+.collapsed>.full-width-block:after{
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
 .schedule_item{
     background-color: #fbfbfb;
     border: 1px solid #dddddd;
