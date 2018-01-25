@@ -200,6 +200,7 @@
 }
 #programme a {
     position:relative;
+    display:block;
     }
 #programme a:hover .speakergallery {
     filter:grayscale(0);
@@ -211,7 +212,7 @@
     left: 15%;
     line-height: 100%;
     margin-top: -1em;
-    opacity: 0.8;
+    opacity: 0.9;
     padding: 1em;
     position: absolute;
     width: 70%;
