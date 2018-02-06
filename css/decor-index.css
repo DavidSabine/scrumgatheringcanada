@@ -195,8 +195,8 @@
 }
 .speakergallery {
     filter: grayscale(1);
-    /*width:8.28%;*/
-    width:9.09%;
+    width:8.28%;
+    /*width:9.09%;*/
 }
 #programme a {
     position:relative;
