@@ -92,6 +92,9 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
+#schedule div div div.row>h4 {
+    text-align:right;
+}
 .time{
     font-size: 1em ;
     font-weight: 700;
