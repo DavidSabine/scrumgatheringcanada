@@ -92,9 +92,6 @@
     letter-spacing: 0.1em;
     text-transform: uppercase;
 }
-#schedule div div div.row>h4 {
-    text-align:right;
-}
 .time{
     font-size: 1em ;
     font-weight: 700;
@@ -107,3 +104,13 @@
     letter-spacing: 0.6em;
     margin-top:1em;
 }
+@media (min-width:992px) {
+    .col-xs-12.col-md-2.col-md-push-10 {
+        border-color:#ccc;
+        border-style:solid;
+        border-width:1px 0 0 0;
+    }
+    .col-xs-12.col-md-2.col-md-push-10 h4 {
+        font-size:14px;
+
+    }
