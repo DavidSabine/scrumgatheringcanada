@@ -119,9 +119,13 @@
     border-width:0 0 0 0;
 }
 .sponsor-gallery img {
-    padding:8%;
+    padding:3%;
 }
-
+@media (min-width:768px) {
+    .sponsor-gallery img {
+        padding:8%;
+    }
+}
 /* header */
 .site-header {
     background: url("../images/toronto-office.jpg") no-repeat center left/cover;
