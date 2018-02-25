@@ -50,6 +50,28 @@
 #schedule .row {
     margin-bottom:3em;
 }
+#schedule #persistentconferencefeatures {
+    border-color:#ccc;
+    border-radius: 0 1em;
+    border-style:solid;
+    border-width:0 0 0 0;
+}
+@media (min-width:992px) {
+    #schedule #persistentconferencefeatures {
+        border-width:1px 1px 1px 0;
+    }
+}
+#schedule #timetable {
+    border-color:#ccc;
+    border-radius: 0 0;
+    border-style:solid;
+    border-width:0 0 0 0;    
+}
+@media (min-width:992px) {
+    #schedule #timetable {
+        border-width:0 1px 0 0;
+    }
+}
 #schedule .row .col-sm-3 {
     border-color:#ccc;
     border-style:solid;
