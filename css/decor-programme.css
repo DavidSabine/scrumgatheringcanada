@@ -36,6 +36,9 @@
     text-align: center;
     text-transform: uppercase;
 }
+#schedule .section-title span {
+    display:block;
+}
 /* schedule */
 .section-title#day1,
 .section-title#day2 {
