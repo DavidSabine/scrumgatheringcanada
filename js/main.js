@@ -50,20 +50,46 @@ function shuffleElements(nodelist) {
 
 // Countdown jquery
 $(function () {
-    var hour = 16,
-        day = 25,
+    var msg = "";
+    var dayInMilliseconds = 1000*60*60*24;
+    var checkinHour = 16,
+        checkinDay = 25,
+        maineventHour = 9,
+        maineventDay = 26,
         month = 03,
         year = 2018;
-    var conferenceDay = new Date(year, month - 1, day, hour);
-    var dayInMilliseconds = 1000*60*60*24;
-    var daysUntilConference = (conferenceDay.getTime() - new Date().getTime())/dayInMilliseconds;
-    switch(true) {
-        case daysUntilConference > 31:
-            $('#defaultCountdown').countdown({until: conferenceDay, format:'OdH'});
-            break;
-        default:
-            $('#defaultCountdown').countdown({until: conferenceDay, format:'dHMS'});
-    } 
+    var checkinBegins = new Date(year, month - 1, checkinDay, checkinHour);
+    var daysUntilCheckinBegins = (checkinBegins.getTime() - new Date().getTime())/dayInMilliseconds;
+    var maineventBegins = new Date(year, month - 1, maineventDay, maineventHour);
+    var daysUntilMaineventBegins = (maineventBegins.getTime() - new Date().getTime())/dayInMilliseconds;
+    if(daysUntilMaineventBegins > 0) {
+        $('.index #countdown').removeClass('hide');
+        switch(true) {
+            case daysUntilCheckinBegins > 1/24:
+                $('#defaultCountdown').countdown({until: checkinBegins, format:'HMS'});
+                msg = "Check-in Begins";
+                break;
+            case daysUntilCheckinBegins > 1/24/60:
+                $('#defaultCountdown').countdown({until: checkinBegins, format:'MS'});
+                msg = "Check-in Begins";
+                break;
+            case daysUntilCheckinBegins > 0:
+                $('#defaultCountdown').countdown({until: checkinBegins, format:'S'});
+                msg = "Check-in Begins";
+                break;
+            case daysUntilMaineventBegins > 1/24:
+                $('#defaultCountdown').countdown({until: maineventBegins, format:'HMS'});
+                break;
+            case daysUntilMaineventBegins > 1/24/60:
+                $('#defaultCountdown').countdown({until: maineventBegins, format:'MS'});
+                break;
+            default:
+                $('#defaultCountdown').countdown({until: maineventBegins, format:'S'});
+        }
+        if(msg.length>0) {
+            $('#countdownHeader').text(msg);
+        }
+    }
 });
 
 $(function () {
@@ -93,7 +119,7 @@ $(function () {
     $('#navbar-items a[href*=#]:not([href=#]), a.inpage').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
-            console.log(target);
+            // console.log(target);
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
 
             if (target.length) {
