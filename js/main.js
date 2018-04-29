@@ -1,19 +1,10 @@
 $(document).ready(function () {
 
-    $('.davidsphone').text("416-254-3665 (David Sabine's mobile phone)");
     $('.1stemailaddress').text("1st@scrumgathering.ca");
     $('.sponsoremailaddress').text("sponsors@scrumgathering.ca");
-    if($('#randomCity').length) {
-        setInterval(writeRandomCity,1750);
-    }
     reOrderSponsors();
 
 });
-
-function writeRandomCity() {
-    var city = Math.floor(Math.random()*canadian_cities.length);
-    document.getElementById("randomCity").innerText = canadian_cities[city];
-}
 
 function reOrderSponsors() {
   shuffleElements(document.querySelectorAll('.northern-lights-sponsors .row.sponsor'));
@@ -47,50 +38,6 @@ function shuffleElements(nodelist) {
     }
  
 }
-
-// Countdown jquery
-$(function () {
-    var msg = "";
-    var dayInMilliseconds = 1000*60*60*24;
-    var checkinHour = 16,
-        checkinDay = 25,
-        maineventHour = 9,
-        maineventDay = 26,
-        month = 03,
-        year = 2018;
-    var checkinBegins = new Date(year, month - 1, checkinDay, checkinHour);
-    var daysUntilCheckinBegins = (checkinBegins.getTime() - new Date().getTime())/dayInMilliseconds;
-    var maineventBegins = new Date(year, month - 1, maineventDay, maineventHour);
-    var daysUntilMaineventBegins = (maineventBegins.getTime() - new Date().getTime())/dayInMilliseconds;
-    if(daysUntilMaineventBegins > 0) {
-        $('.index #countdown').removeClass('hide');
-        switch(true) {
-            case daysUntilCheckinBegins > 1/24:
-                $('#defaultCountdown').countdown({until: checkinBegins, format:'HMS'});
-                msg = "Check-in Begins";
-                break;
-            case daysUntilCheckinBegins > 1/24/60:
-                $('#defaultCountdown').countdown({until: checkinBegins, format:'MS'});
-                msg = "Check-in Begins";
-                break;
-            case daysUntilCheckinBegins > 0:
-                $('#defaultCountdown').countdown({until: checkinBegins, format:'S'});
-                msg = "Check-in Begins";
-                break;
-            case daysUntilMaineventBegins > 1/24:
-                $('#defaultCountdown').countdown({until: maineventBegins, format:'HMS'});
-                break;
-            case daysUntilMaineventBegins > 1/24/60:
-                $('#defaultCountdown').countdown({until: maineventBegins, format:'MS'});
-                break;
-            default:
-                $('#defaultCountdown').countdown({until: maineventBegins, format:'S'});
-        }
-        if(msg.length>0) {
-            $('#countdownHeader').text(msg);
-        }
-    }
-});
 
 $(function () {
     $('[data-toggle="tooltip"]').tooltip()
