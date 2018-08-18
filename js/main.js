@@ -55,10 +55,10 @@ function handleTopNavAnimation() {
     var top = $(window).scrollTop();
 
     if (top > 10) {
-        $('body.index #site-nav').addClass('navbar-solid');
+        $('body.ontarioscrumcommunity #site-nav, body.index #site-nav').addClass('navbar-solid');
     }
     else {
-        $('body.index #site-nav').removeClass('navbar-solid');
+        $('body.ontarioscrumcommunity #site-nav, body.index #site-nav').removeClass('navbar-solid');
     }
 }
 
