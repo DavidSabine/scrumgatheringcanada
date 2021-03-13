@@ -1,7 +1,7 @@
 $(document).ready(function () {
 
-    $('.1stemailaddress').text("1st@scrumgathering.ca");
-    $('.sponsoremailaddress').text("sponsors@scrumgathering.ca");
+    $('.1stemailaddress').text("canadascrum@outlook.com");
+    $('.sponsoremailaddress').text("canadascrum@outlook.com");
     reOrderSponsors();
 
 });
